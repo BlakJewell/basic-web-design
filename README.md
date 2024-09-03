@@ -1,1 +1,1 @@
-# basic-web-design
+# basic-web-design-class-project-page

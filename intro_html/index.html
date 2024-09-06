@@ -1,64 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>ONI.waypoint</title>
-    </head>
+    <title>ONI.waypoint</title>
     <style>
-        
         body {
             background-color: rgb(19, 17, 17);
+            color: #F8F8FF;
+            font-family: Arial, sans-serif;
         }
         div {
           background-color: #ce2525;
         }
+
+        /* Navigation and main content styles */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            background-color: #ce2525;
+            padding: 10px;
+        }
+
+        .nav-container h2 {
+            margin: 0 20px;
+        }
+
+        .nav-container a {
+            color: white;
+            text-decoration: none;
+        }
+
         img {
             display: block;
             margin: 20px auto;
-            width: 600px
+            width: 600px;
         }
+
+        main {
+            padding: 20px;
+        }
+        section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
         section {
             background-color: rgba(15, 14, 7, 0.904);
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            text-align: center;
+            min-width: 250px;
         }
-        </style>
-    <body>
-        
-        <BODY TEXT="#F8F8FF">
-          
-           
 
+        .sections-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-        <div id="container">
-        <header><h1 style="text-align:center;">Office Of Naval Intelligence</h1></header>
-         <nav>
-                <div id="nav_box">
-                    <h2 style="text-align:center;"><a href="index.html">ONI</a></h2>
-                    <h2 style="text-align:center;"><a href="UN.html">Navy</a></h2>
-                </div>
-            </nav>  
-        </div>
+        hr {
+            border-color: white;
+            margin: 20px 0;
+        }
 
-        <p>
-            <img src="https://halo.wiki.gallery/images/thumb/1/15/ONI_Seal_1.png/600px-ONI_Seal_1.png?20140610203906" alt="ONI_Seal_1">
-        </p>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ce2525;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .sections-container {
+                flex-direction: column;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align:center;">Office Of Naval Intelligence</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="nav-container">
+        <h2><a href="index.html">ONI</a></h2>
+        <h2><a href="UN.html">Navy</a></h2>
+    </nav>
+
+    <!-- Main content -->
     <main>
-    
-        
-    <div>
-        <h2 style="text-align:center;">
-            What is ONI
-        </h2>
-    </div>
-         
-        
+        <p>
+            <img src="https://halo.wiki.gallery/images/thumb/1/15/ONI_Seal_1.png/600px-ONI_Seal_1.png?20140610203906" alt="ONI Seal">
+        </p>
+    <Div>
+        <h2 style="text-align:center;">What is ONI</h2>
+    </Div>
+
         <p style="font-size:120%;">
-            The Office of Naval Intelligence was founded in 2178.
-            One of our earliest known projects was in 2321. 
-            This project, dubbed <a href="https://halo.fandom.com/wiki/ORION_Project" target="_blank">ORION</a>, was an attempt to increase the effectiveness of Colonial Military Authority soldiers. However this was eventually postponed.</p>
+            The Office of Naval Intelligence was founded in 2178. One of our earliest known projects was in 2321. This project, dubbed <a href="https://halo.fandom.com/wiki/ORION_Project" target="_blank">ORION</a>, was an attempt to increase the effectiveness of Colonial Military Authority soldiers, though it was eventually postponed. 
+        </p>
 
-
-            <p style="font-size:120%;">In 2491, the Carver Findings were released, guiding ONI's approach to the growing Insurrectionist threat and leading to<a href="https://www.halopedia.org/Operation:_TREBUCHET" target="_blank">Operation: TREBUCHET.</a>  Our operatives were vital in suppressing uprisings across the Outer Colonies, ensuring Earth's control. Unfortunately, this focus left us unprepared when the far greater threat of the Covenant emerged.
+        <p style="font-size:120%;">In 2491, the Carver Findings were released, guiding ONI's approach to the growing Insurrectionist threat, leading to <a href="https://www.halopedia.org/Operation:_TREBUCHET" target="_blank">Operation: TREBUCHET.</a> Our operatives were crucial in suppressing uprisings across the Outer Colonies, securing Earth's control. However, this focus left us unprepared when the Covenant emerged...</p>
+            <p>
                 In 2524, military personnel were selected from boot camps as candidates for the new Generation II ORION Project, later known as the Spartan-II program. These individuals were sent to Reach for rigorous training and eventual augmentation.
 
                 The Office of Naval Intelligence, commonly referred to as ONI, is the intelligence arm of the United Nations Space Command Navy. While we are seen as the UNSC’s information-gathering and analysis division, ONI’s reach extends far beyond typical intelligence work.
@@ -72,61 +127,63 @@
                 Post-War
                 
                 After the war’s conclusion, ONI emerged as the leading intelligence body of the Unified Earth Government. Our war efforts earned us considerable autonomy, overseen only by the UNSC Security Council. In 2555, Admiral Serin Osman took over from Admiral Margaret Parangosky as the Commander-in-Chief of ONI (CINCONI).
-            
-            
-        </p>
-     <hr>
-    
-
-    
-        <img src="https://pm1.aminoapps.com/7396/d51cfe088219c42f8ba7027bdb77bc859e015412r1-500-556v2_hq.jpg">
-
-        <p style="text-align:center;">(Admiral Serin Osman current CINCONI)</p>
-         
-            </hr>
-    <div>
-            <h2 style="text-align:center;">
-                Sections of ONI
-            </h2>
-     </div>
-
-    <section>
-        <h2 style="text-align:center;">Section-1</h2>
-        <p style="text-align:center;" style="font-size:120%;">Section One is the proper intelligence-gathering branch of ONI. As such, the section's services are most often utilized by UNSC forces. Its responsibilities include information gathering and codebreaking through military espionage. Information released by Section One includes evacuation notices for colony worlds and Covenant force deployments. Section One is responsible for covering up all information on locations ONI wishes to keep from the public eye</p>
-    </section>
-
-
-    <section>
-        <h2 style="text-align:center;">Section-2</h2>
-        <p style="text-align:center;" style="font-size:120%;">Section Two only deals with external communication and public morale.It handles communication between colonies. Section Two is also responsible for broadcasting pre-recorded human carrier signals from various locations into slipspace to confuse Covenant triangulation technology, preventing them from discovering Earth. this division was responsible for the Cole:protocal</p>
-    </section>
-
-    <section>
-        <h2 style="text-align:center;">Section-3</h2>
-        <p style="text-align:center;" style="font-size:120%;">Section Three is the top-secret projects division of ONI that oversees the various groups responsible for creating new innovations through the use of advanced alien technology.It is responsible for the SPARTAN-IIand many other operations. Section Three's programs are well-known and are widely celebrated for their success.</p>
-    </section>
+            </p>
 
         <hr>
-            <h3>sub divisions</h3>
-            
-            <li style="font-size:110%;">Materials Group</li>
-            <li style="font-size:110%;">Watershed Division</li>
-            <li style="font-size:110%;">Prowler Corps</li>
-            <li style="font-size:110%;">ONI Security</li>
-            <li style="font-size:110%;">Signal Corps</li>
-            <li style="font-size:110%;">Strategic Response Unit</li>
-            <li style="font-size:110%;">Department of Colonial Security</li>
-            <li style="font-size:110%;">The Reverse Engineering and Prototyping Xenotechnology department </li>
-            <li style="font-size:110%;">Physical and Technical Security Office</li>
-            <li style="font-size:110%;">ONI Recon 111</li>
-            <li style="font-size:110%;">NavSpecWar</li>
+        <div>
+            <h2 style="text-align:center;">Sections of ONI</h2>
 
-        </hr>
+        </div>
+
+        <!-- Sections container with side-by-side layout -->
+        <div class="sections-container">
+            <section>
+                <h2>Section-1</h2>
+                <p>Section One is ONI's proper intelligence-gathering branch, responsible for codebreaking and espionage. It also covers evacuation notices and keeps sensitive information hidden from the public.</p>
+                <img src="file:///C:/Users/Jewell/OneDrive/Documents/GitHub/basic-web-design/intro_html/imagas/ONI_emblem.webp" alt="Section-1">
+            </section>
+
+            <section>
+                <h2>Section-2</h2>
+                <p>Section Two manages external communication and public morale, including broadcasting pre-recorded signals to confuse Covenant technology. It was responsible for the <a href="https://www.halopedia.org/Cole_Protocol" target="_blank">Cole Protocol.</a></p>
+                <img src="https://www.therpf.com/forums/attachments/oni-patch-png.444514/" alt="Section-2">
+            </section>
+
+            <section>
+                <h2>Section-3</h2>
+                <p>Section Three oversees top-secret projects, including the SPARTAN-II program. It is widely known for its success in creating advanced technologies.</p>
+                <img src="https://preview.redd.it/recruiting-gb-a3-halo-milsim-18-oni-recon-v0-7uo61c4p1olb1.png?width=1024&format=png&auto=webp&s=40f3a82c807f38707ca137fc2d9368d122c2a5cb" alt="Section-3">
+            </section>
+        </div>
+
+        <hr>
+
+        <h3>Sub-divisions</h3>
+        <ul>
+            <li>Materials Group</li>
+            <li>Watershed Division</li>
+            <li>Prowler Corps</li>
+            <li>ONI Security</li>
+            <li>Signal Corps</li>
+            <li>Strategic Response Unit</li>
+            <li>Department of Colonial Security</li>
+            <li>Reverse Engineering and Prototyping Xenotechnology Department</li>
+            <li>Physical and Technical Security Office</li>
+            <li>ONI Recon 111</li>
+            <li>NavSpecWar</li>
+        </ul>
+
+        <hr>
+        <div><h2 style="text-align:center;">A salute to our leaders</h2></div>
+        <img src="https://pm1.aminoapps.com/7396/d51cfe088219c42f8ba7027bdb77bc859e015412r1-500-556v2_hq.jpg" alt="Admiral Serin Osman">
+        <p style="text-align:center;">(Admiral Serin Osman - current CINCONI)</p>
+        <img src="https://halo.wiki.gallery/images/thumb/0/09/HTV-Solace-Margaret.png/300px-HTV-Solace-Margaret.png" alt="M.Parangosky">
+        <p style="text-align:center;">(Admiral Margaret Parangosky - former CINCONI)</p>
     </main>
-        <hr>
-        <footer>
-            <p>© office of naval Intelligence 2178-2554</p>
-        </footer>
-        <hr> 
-    </body>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Office of Naval Intelligence 2178-2554</p>
+    </footer>
+</body>
 </html>

@@ -13,12 +13,20 @@
             margin: 0;
             padding: 0;
         }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
-        }
+         
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
         
         /* Header styling */
         header {
@@ -181,22 +189,37 @@
 
         <h3>The Future of the Navy</h3>
         <p>As humanity pushes deeper into uncharted space, the UNSC Navy stands as the first line of defense against any threats that may arise. From patrolling distant colonies to safeguarding vital trade routes, the Navy ensures that humans can explore and expand without fear. Advanced ships and skilled crews work tirelessly to maintain peace, ready to respond to any challenge. Whether it's pirates, insurrectionists, or unknown alien forces, the UNSC Navy's presence guarantees security for all, allowing humanity to continue its journey among the stars with confidence.</p>
-
+        <hr>
+        <div class="row">
+            <div class="column">
         <!-- Images -->
         <img src="https://halo.wiki.gallery/images/thumb/9/91/Enc22_ColeFullCutout.png/300px-Enc22_ColeFullCutout.png" alt="Admiral Preston Cole" width="300">
+             </div> 
+            <div class="column">
+
         <img src="https://halo.wiki.gallery/images/thumb/8/8e/HaloMythosFullTransparentKeyes.png/301px-HaloMythosFullTransparentKeyes.png" alt="Captain Jacob Keys" width="300">
-        <img src="https://static.wikia.nocookie.net/p__/images/b/bd/Lord_Hood.png/revision/latest?cb=20230317055704&path-prefix=protagonist" alt="Terrence Hood" width="300">
+             </div>
+            <div class="column">
+        <img src="https://i.redd.it/2oibuyze5e881.jpg" alt="Maranda Keys" width="300">
+             </div>
+            <div class="column">
+        <img src="https://halo.wiki.gallery/images/thumb/8/8d/Fleet_Battle_Hood.jpg/150px-Fleet_Battle_Hood.jpg" alt="Terrence Hood" width="300">
+             </div>
+            <div class="column">
         <img src="https://halo.wiki.gallery/images/thumb/0/09/HTV-Solace-Margaret.png/300px-HTV-Solace-Margaret.png" alt="Margaret Parangosky" width="300">
+             </div>
+
+        </div>
 
 
         <hr>
 
-        <h3>Learn More</h3>
+        <h3>Learn More about our heros</h3>
         <ul>
             <li>SN:03956-26127-PC <a href="https://www.halopedia.org/Preston_Cole" target="_blank">Admiral Preston Cole</a> (2470-2543)</li>
-            <li>SN:01928-19912-JK <a href="https://www.halopedia.org/Jacob_Keyes" target="_blank">Captin Jacob Keyes</a> (2495-2552)</li>
+            <li>SN:01928-19912-JK <a href="https://www.halopedia.org/Jacob_Keyes" target="_blank">Captin Jacob Keyes</a> (2495-2552)</li> <li>SN:15972-19891-MK <a href="https://www.halopedia.org/Miranda_Keyes" target="_blank">Captin Miranda Keyes</a> (2525-2552) </li>
             <li>SN:07960-48392-TH <a href="https://halofanon.fandom.com/wiki/Terrence_Hood,_23rd_Viscount_Hood" target="_blank">Fleet Admiral Terrence Hood</a></li>
-            <li>SN:15972-19891-MK <a href="https://www.halopedia.org/Miranda_Keyes" target="_blank">Captin Miranda Keyes</a> (2525-2552)</li>
+          
             <li>SN:00230-00923-MP <a href="https://www.halopedia.org/Margaret_Parangosky" target="_blank">Margaret Parangosky</a></li>
         </ul>
 

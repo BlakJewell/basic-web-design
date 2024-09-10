@@ -19,24 +19,54 @@ header {
 }
 
 /* Navigation bar styling */
-nav ul {
+nav {
     list-style-type: none;
     text-align: center;
     padding: 10px 0;
     margin: 0;
 }
+/* Center and align the nav links side by side */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the links */
+    margin-top: 20px;
+}
 
-nav ul li {
+/* Styling for individual links */
+.nav-links h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Styling the links */
+.nav-links a {
+    text-decoration: underline;
+    color: #261a68;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    text-decoration: none;
+    color: #060538;
+}
+
+/* Style the nav container background */
+nav {
+    padding: 10px 0;
+}
+
+nav {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
@@ -68,8 +98,6 @@ ul li {
 
 /* Footer styling */
 footer {
-    background-color: #72746f;
-    color: #fff;
     text-align: center;
     padding: 10px;
     position: relative;
@@ -78,6 +106,5 @@ footer {
 }
 
 hr {
-    border-color: #706969;
     margin: 20px 0;
 }

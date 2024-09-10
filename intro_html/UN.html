@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNSC.Navy/waypoint - Home</title>
     <link rel="stylesheet" href="ccs/style.css">
-    <style>/* General body styling */
+    <style>
+        
+        /* General grid layout for 3 on top, 2 on bottom */
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between the images */
+    margin-top: 20px;
+}
+
+/* Style for the columns */
+.column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Adjust the layout for the second row */
+.row .column:nth-child(4),
+.row .column:nth-child(5) {
+    grid-column: span 1;
+}
+
+/* Ensure the bottom two images take up the full width of the row */
+@media (min-width: 768px) {
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
         body {
-            background-color: #4b5530;
-            color: #070707;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            background-color: #58595c;
+            color: #333; 
         }
          
 
@@ -30,56 +61,20 @@
         
         /* Header styling */
         header {
-            text-align: center;
-            background-color: #292414;
-            padding: 20px;
+            background-color: #333;
+            color: white;
         }
         
         /* Navigation bar styling */
-        nav ul {
-            list-style-type: none;
-            text-align: center;
-            background-color: #8f611d;
-            padding: 10px 0;
-            margin: 0;
+        nav {
+            background-color: #6278a7;
         }
         
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        
-        nav ul li a {
-            color: #cfb12a;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Main content styling */
-        main {
-            padding: 20px;
-        }
         
         h2, h3 {
-            color: #28441b;
+            color: #032535;
         }
-        
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        
-        /* Image styling */
-        img {
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-        }
-        
+
         /* Unordered list styling */
         ul {
             padding-left: 20px;
@@ -91,18 +86,12 @@
         
         /* Footer styling */
         footer {
-            background-color: #72746f;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: #2a3841;
+            color: #ffffff;
         }
         
         hr {
             border-color: #706969;
-            margin: 20px 0;
         }</style>
 </head>
 <body>
@@ -114,12 +103,13 @@
     <!-- Navigation -->
 
     <nav>
-        <div>
-            <h2 style="text-align:center;"><a href="index.html">ONI</a></h2>
-            <h2 style="text-align:center;"><a href="UN.html">UNSC Navy</a></h2>
-            <h2 style="text-align:center;"><a href="UNMC.html">Marines</a></h2>
+        <div class="nav-links">
+            <h2><a href="index.html">ONI</a></h2>
+            <h2><a href="UN.html">UNSC Navy</a></h2>
+            <h2><a href="UNMC.html">Marines</a></h2>
         </div>
     </nav>
+    
     
 
     <!-- Main Content -->
@@ -238,25 +228,37 @@
         <h3>The Future of the Navy</h3>
         <p>As humanity pushes deeper into uncharted space, the UNSC Navy stands as the first line of defense against any threats that may arise. From patrolling distant colonies to safeguarding vital trade routes, the Navy ensures that humans can explore and expand without fear. Advanced ships and skilled crews work tirelessly to maintain peace, ready to respond to any challenge. Whether it's pirates, insurrectionists, or unknown alien forces, the UNSC Navy's presence guarantees security for all, allowing humanity to continue its journey among the stars with confidence.</p>
         <hr>
-        <div class="row">
-            <div class="column">
-        <!-- Images -->
-        <img src="https://halo.wiki.gallery/images/thumb/9/91/Enc22_ColeFullCutout.png/300px-Enc22_ColeFullCutout.png" alt="Admiral Preston Cole" width="300">
-             </div> 
-            <div class="column">
+       
 
-        <img src="https://halo.wiki.gallery/images/thumb/8/8e/HaloMythosFullTransparentKeyes.png/301px-HaloMythosFullTransparentKeyes.png" alt="Captain Jacob Keys" width="300">
-             </div>
-            <div class="column">
-        <img src="https://i.redd.it/2oibuyze5e881.jpg" alt="Maranda Keys" width="300">
-             </div>
-            <div class="column">
-        <img src="https://halo.wiki.gallery/images/thumb/8/8d/Fleet_Battle_Hood.jpg/150px-Fleet_Battle_Hood.jpg" alt="Terrence Hood" width="300">
-             </div>
-            <div class="column">
-        <img src="https://halo.wiki.gallery/images/thumb/0/09/HTV-Solace-Margaret.png/300px-HTV-Solace-Margaret.png" alt="Margaret Parangosky" width="300">
-             </div>
-
+        <div>
+            <div>
+                <!-- Image 1 -->
+                <img src="https://halo.wiki.gallery/images/thumb/9/91/Enc22_ColeFullCutout.png/300px-Enc22_ColeFullCutout.png" alt="Admiral Preston Cole" width="300">
+            </div> 
+            <p>P.Cole is best known for being the commander of the majority of the UNSC Navy and for his role in creating the Cole Protocol, a law responsible for defending Earth's location A military genius, he defeated the Covenant in every major battle he fought. His battle record was considered to be as or even more impressive than a Spartan-IIs. In 2543, at the Battle of Psi Serpentis, Cole was killed causing a gas giant to go nova destroying a Covenant fleet. Nonetheless, some officers believe that Cole survived and choose to retire away from the UNSC. for mor information read the imposible life and posible death. of Preston J. cole</p>
+            <div>
+                <!-- Image 2 -->
+                <img src="https://halo.wiki.gallery/images/thumb/8/8e/HaloMythosFullTransparentKeyes.png/301px-HaloMythosFullTransparentKeyes.png" alt="Captain Jacob Keys" width="300">
+            </div>
+            <p>Jacob Keys was a commanding officer and one of the most brilliant tacticians in the UNSC Navy. He commanded great respect as a highly skilled strategist and inspirational leader to those under his command. His many decorations, thirty-five years of combat experience against the Covenant and Insurrectionists, and ability to keep a secret made him an almost natural choice to command the UNSC Pillar of Autumn and its secret cargo. He was renowned as a war hero for his development of the Keyes Loop tactic. Few outside select Navy personnel know the full story of how Captain Jacob Keyes met his end. What is known, however, is that after escaping Reach in its final hours of destruction, the Covenant relentlessly pursued his ship and ultimately destroyed it. Many believe that Keyes went down with the vessel, a heroic end for a legendary figure. But if you’re after the real story, perhaps the Master Chief himself could tell you—if you’re brave enough to ask.</p>
+            <div>
+                <!-- Image 3 -->
+                <img src="https://i.redd.it/2oibuyze5e881.jpg" alt="Maranda Keys" width="300">
+            </div>
+            <p>Commander Miranda Keyes, born Miranda Halsey. as the daughter of the late Captain Jacob Keyes and the late Doctor Catherine E. Halsey. during her time in the military she quickly ascended through the ranks and served as the commanding officer of both the UNSC In Amber Clad as well as the UNSC Forward Unto Dawn during the final months of the Human-Covenant War. She was also the commander of the human expedition force to an alien structure known as the Ark in late 2552, leading humanity in the final battle of the war.Like her father, Miranda Keyes was known for unorthodox tactics, one of the bravest officers in the Navy. This was demonstrated by her decision to follow the covenant higher arc Regret's flagship. into slipspace during the Battle of Mombasa, when she crashed the UNSC Hilbert into the Covenant destroyer over Gamma Pavonis VII, and leading the final battle of the war, when she crashed her Pelican through the a window in a last-ditch effort to rescue Avery Johnson moments before her death.
+                Due to her unexpected move to follow Regret's ship into slipspace, she was described by Commander Richard Lash as "the ballsiest officer in the Fleet". He further suggested that she may have been trying to live up to the reputation of her father or that she was simply "nuts".(still has more ribbins on her coller than you Dick)
+                Although she and her father were not particularly close, Miranda identified with him more than she did with her mother. This is suggested by her decision to take up her father's surname after being raised by her mother. As a child, Miranda was often curious and excited about her father's assignments. While her father was serving in the Outer Colonies, Miranda would often learn about naval tactics by herself for her own enjoyment. Even at a young age, she did not require much affection from Jacob, though she did enjoy walking down Armstrong Alley with him to admire the scenery. the navy lost one of its best in that battle.
+            </p>
+            <div>
+                <!-- Image 4 -->
+                <img src="https://halo.wiki.gallery/images/thumb/8/8d/Fleet_Battle_Hood.jpg/150px-Fleet_Battle_Hood.jpg" alt="Terrence Hood" width="300">
+            </div>
+            <p style="text-align:center;">Active curently serving as a member of HIGHCOM. </p> 
+            <div>
+                <!-- Image 5 -->
+                <img src="https://halo.wiki.gallery/images/thumb/0/09/HTV-Solace-Margaret.png/300px-HTV-Solace-Margaret.png" alt="Margaret Parangosky" width="300">
+            </div>
+            <p style="text-align:center;">Retired passing the title of CINCONI to Admeral Serin Osman(One ONI always ONI though)</p>
         </div>
 
 

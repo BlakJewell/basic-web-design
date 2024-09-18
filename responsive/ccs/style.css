@@ -14,6 +14,9 @@ ul li {
     display: block;
         text-align: center;
 }
+ul li {
+    font-size: 1.1em;
+}
 /* mobile styles */
 @media (min-width: 320px) {
     nav {
@@ -41,9 +44,8 @@ ul li {
     main {
         padding: 20px;
     }
-    h1,
-    h2,
-    h3 {
+    
+    h2, h3 {
         text-align: center;
         text-shadow: 1px 1px 1px rgb(66, 65, 65); 
     }
@@ -86,8 +88,25 @@ ul li {
     nav h2 a {
         padding: 2px;
     }
+    nav {
+        padding: 2px;
+    }
     hr {
         display: none;
     }
-    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .multi_col {
+        display: flex;
+
+    }
+    .col {
+        margin:20px;
+        padding:20px;
+        border: 2px solid blanchedalmond;
+    }
 }

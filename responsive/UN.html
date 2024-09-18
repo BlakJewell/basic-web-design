@@ -6,44 +6,16 @@
     <title>UNSC.Navy/waypoint - Home</title>
     <link rel="stylesheet" href="ccs/style.css">
     <style>
+        body {
+            font-size: 130%;
+        }
         
-        /* General grid layout for 3 on top, 2 on bottom */
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Space between the images */
-    margin-top: 20px;
-}
-
-/* Style for the columns */
-.column img {
-    border-radius: 10px;
-}
-
-/* Adjust the layout for the second row */
-.row .column:nth-child(4),
-.row .column:nth-child(5) {
-    grid-column: span 1;
-}
-
-/* Ensure the bottom two images take up the full width of the row */
         body {
             background-color: #58595c;
             color: #333; 
         }
-         
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+p {
+    text-align: center;
 }
         
         /* Header styling */
@@ -58,10 +30,13 @@
         }
         
         
-        h2, h3 {
+        h1, h2, h3 {
+
             color: #032535;
         }
-        
+        img {
+            width: 50%;
+        }
         
         /* Footer styling */
         footer {
@@ -99,7 +74,8 @@
         
         <h2>About the UNSC Navy</h2>
         <img src="https://halo.wiki.gallery/images/5/5b/UNSC_Navy_Logo.svg" alt="UNSC_Navy_Logo" width="300">
-        <p>Combatant commands
+        <section id="multi_col">
+             <p>Combatant commands
             our navy is divided into two primary combatant commands - Naval Command (NAVCOM) and Unified Ground Command (UNICOM). The former controls all space-based assets and operations, while the latter focuses on terrestrial and close-orbit missions. NAVCOM has administrative control over the Navy and its officers alongside select Marine Corps units. UNICOM has operational authority over UNSC Army and Air Force deployments and some Marine units, and work alongside the Navy to coordinate orbital fire support missions and in-atmosphere support.
             
             NAVCOM and UNICOM form joint task forces that are thus then assigned to one of four Central Commands (CENTCOMs) - responsible for the defense and security of a given region of human space, referred to as CENTCOM Regions. These regions follow well-mapped slipspace routes which connect dozens of star systems; forces assigned to one CENTCOM cannot be moved to another without the approval of HIGHCOM, thus meaning each region must carefully marshal their limited resources. UNICOM planetside forces are organized into task forces that contain ground, aerospace, and maritime combat assets.</p>
@@ -121,6 +97,8 @@
             The Covenant War
             In 2525, humanity encountered an alien alliance known as the Covenant, sparking the most devastating conflict in human history. The Covenant declared humanity heretical, launching a brutal campaign to exterminate the species. The UNSC found itself outmatched technologically, losing many of its Outer Colonies to Covenant attacks. Over the next 27 years, billions of humans were killed, and entire worlds were obliterated by the Covenant's devastating orbital bombardments. Despite these overwhelming odds, the UNSC fought back fiercely, employing strategies like the Cole Protocol to prevent the Covenant from discovering Earth and deploying Spartan super-soldiers to turn the tide in key battles. By 2552, the war reached its climax with the defense of Earth and the destruction of key Covenant leadership, ultimately leading to the UNSC's hard-won victory.       
         </p>
+        </section>
+       
 
         <h3>The Role of the UNSC Navy</h3>
         <p>"Provide naval forces to ensure freedom of access for aerospace and terrestrial operations."
@@ -165,26 +143,26 @@
         <h2>Ship classes</h2>
         <H3>Frigates</H3>
         <ul>
-            <li>Anlace</li>
-            <li>Charon</li>
-            <li>Paris</li>
-            <li>Mulsanne</li>
-            <li>Stalwart</li>
-            <li>Strisent</li>
+            <li>-Anlace</li>
+            <li>-Charon</li>
+            <li>-Paris</li>
+            <li>-Mulsanne</li>
+            <li>-Stalwart</li>
+            <li>-Strisent</li>
         </ul>
         <hr>
         <h3>Cruisers</h3>
         <ul>
-            <li>Marathon</li>
-            <li>Autumn</li>
-            <li>Valiant</li>
+            <li>-Marathon</li>
+            <li>-Autumn</li>
+            <li>-Valiant</li>
         </ul>
         <hr>
         <h3>destroyers</h3>
         <ul>
-            <li>Able</li>
-            <li>Halberd</li>
-            <li>Diligence</li>
+            <li>-Able</li>
+            <li>-Halberd</li>
+            <li>-Diligence</li>
         </ul>
 
         <h3>HIGHCOM</h3>
@@ -213,17 +191,17 @@
         <div>
             <div>
                 <!-- Image 1 -->
-                <img src="https://halo.wiki.gallery/images/thumb/9/91/Enc22_ColeFullCutout.png/300px-Enc22_ColeFullCutout.png" alt="Admiral Preston Cole" width="300">
+                <img src="https://halo.wiki.gallery/images/thumb/9/91/Enc22_ColeFullCutout.png/300px-Enc22_ColeFullCutout.png" alt="Admiral Preston Cole" width="100">
             </div> 
             <p>P.Cole is best known for being the commander of the majority of the UNSC Navy and for his role in creating the Cole Protocol, a law responsible for defending Earth's location A military genius, he defeated the Covenant in every major battle he fought. His battle record was considered to be as or even more impressive than a Spartan-IIs. In 2543, at the Battle of Psi Serpentis, Cole was killed causing a gas giant to go nova destroying a Covenant fleet. Nonetheless, some officers believe that Cole survived and choose to retire away from the UNSC. for mor information read the imposible life and posible death. of Preston J. cole</p>
             <div>
                 <!-- Image 2 -->
-                <img src="https://halo.wiki.gallery/images/thumb/8/8e/HaloMythosFullTransparentKeyes.png/301px-HaloMythosFullTransparentKeyes.png" alt="Captain Jacob Keys" width="300">
+                <img src="https://halo.wiki.gallery/images/thumb/8/8e/HaloMythosFullTransparentKeyes.png/301px-HaloMythosFullTransparentKeyes.png" alt="Captain Jacob Keys" width="100">
             </div>
             <p>Jacob Keys was a commanding officer and one of the most brilliant tacticians in the UNSC Navy. He commanded great respect as a highly skilled strategist and inspirational leader to those under his command. His many decorations, thirty-five years of combat experience against the Covenant and Insurrectionists, and ability to keep a secret made him an almost natural choice to command the UNSC Pillar of Autumn and its secret cargo. He was renowned as a war hero for his development of the Keyes Loop tactic. Few outside select Navy personnel know the full story of how Captain Jacob Keyes met his end. What is known, however, is that after escaping Reach in its final hours of destruction, the Covenant relentlessly pursued his ship and ultimately destroyed it. Many believe that Keyes went down with the vessel, a heroic end for a legendary figure. But if you’re after the real story, perhaps the Master Chief himself could tell you—if you’re brave enough to ask.</p>
             <div>
                 <!-- Image 3 -->
-                <img src="https://i.redd.it/2oibuyze5e881.jpg" alt="Maranda Keys" width="300">
+                <img src="https://i.redd.it/2oibuyze5e881.jpg" alt="Maranda Keys" width="100">
             </div>
             <p>Commander Miranda Keyes, born Miranda Halsey. as the daughter of the late Captain Jacob Keyes and the late Doctor Catherine E. Halsey. during her time in the military she quickly ascended through the ranks and served as the commanding officer of both the UNSC In Amber Clad as well as the UNSC Forward Unto Dawn during the final months of the Human-Covenant War. She was also the commander of the human expedition force to an alien structure known as the Ark in late 2552, leading humanity in the final battle of the war.Like her father, Miranda Keyes was known for unorthodox tactics, one of the bravest officers in the Navy. This was demonstrated by her decision to follow the covenant higher arc Regret's flagship. into slipspace during the Battle of Mombasa, when she crashed the UNSC Hilbert into the Covenant destroyer over Gamma Pavonis VII, and leading the final battle of the war, when she crashed her Pelican through the a window in a last-ditch effort to rescue Avery Johnson moments before her death.
                 Due to her unexpected move to follow Regret's ship into slipspace, she was described by Commander Richard Lash as "the ballsiest officer in the Fleet". He further suggested that she may have been trying to live up to the reputation of her father or that she was simply "nuts".(still has more ribbins on her coller than you Dick)

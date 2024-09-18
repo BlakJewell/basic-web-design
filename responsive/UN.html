@@ -17,7 +17,6 @@
 
 /* Style for the columns */
 .column img {
-    width: 100%;
     border-radius: 10px;
 }
 
@@ -28,18 +27,6 @@
 }
 
 /* Ensure the bottom two images take up the full width of the row */
-@media (min-width: 768px) {
-    .row {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
         body {
             background-color: #58595c;
             color: #333; 
@@ -74,15 +61,7 @@
         h2, h3 {
             color: #032535;
         }
-
-        /* Unordered list styling */
-        ul {
-            padding-left: 20px;
-        }
         
-        ul li {
-            font-size: 1.1em;
-        }
         
         /* Footer styling */
         footer {

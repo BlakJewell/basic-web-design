@@ -9,6 +9,9 @@
     
      <style>
         /* Basic Reset */
+        header {
+            color: antiquewhite;
+        }
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +33,7 @@ header {
 }
 
 h1, h2, h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -39,6 +42,7 @@ nav {
 }
 
 nav h2 a {
+    display: block;
     margin: 10px;
     color: #333;
     text-decoration: none;
@@ -51,6 +55,22 @@ nav h2 a:hover {
     background-color: #333;
     color: rgb(255, 255, 255);
 }
+#honor-fallen .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        align-items: center; /* Align items vertically in the center */
+        gap: 20px; /* Add some spacing between the text and image */
+    }
+    
+    #honor-fallen img.div_img {
+        width: 100%; /* Make the image fill the available column width */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 500px; /* Optional: control the maximum width */
+    }
+    
+    #honor-fallen p {
+        font-size: 1.2em; /* Adjust text size if needed */
+    }
 
 /* Main Content */
 #container {
@@ -148,10 +168,11 @@ section {
         <h2><a href="UN.html">UNSC Navy</a></h2>
         <h2><a href="UNMC.html">Marines</a></h2>
         <h2><a href="ODST'.html">ODSTs</a></h2>
+        <h2><a href="worlds.html">UNSC Worlds</a></h2>
     </div>
 </nav>
 
-    <img src="images/Marine_corps_copy.webp" alt="Emblem" style="display: block; margin: 0 auto;">
+    <img src="images/Marine_corps_copy.webp" alt="Emblem" style="display: block; margin: 0 auto;"class="navbar-image">
 
 
 
@@ -271,11 +292,9 @@ section {
         <h2>Honoring the Fallen</h2>
         <div class="grid">
             <div>
-                <p> a moment of silence for those that ventured into the howling dark never to return. </p>
+                <p> -A moment of silence for those that ventured into the howling dark never to return. </p>
             </div>
-            <div>
-                <img src="images/desktop-wallpaper-halo-3-odst-art-games-halo-marine.jpg" alt="Honoring the Fallen" class="responsive-image">
-            </div>
+                <img src="images/desktop-wallpaper-halo-3-odst-art-games-halo-marine.jpg" alt="Honoring the Fallen" class="div_img">
         </div>
     </section>
 </main>

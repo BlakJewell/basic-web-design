@@ -1,4 +1,16 @@
 /* global styles */
+.navbar-image {
+    box-shadow: none; /* Removes the box shadow */
+    max-width: 14%; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+body {
+    font-size: 120%;
+}
+.png-img{
+    box-shadow: none;
+}
 img{
     display: block;
     margin: 0 auto;
@@ -108,5 +120,24 @@ ul li {
         margin:20px;
         padding:20px;
         border: 2px solid blanchedalmond;
+    }
+    .navbar-image {
+        max-width: 30%; /* You can reduce the size specifically for desktop */
+    }
+    #honor-fallen .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        align-items: center; /* Align items vertically in the center */
+        gap: 20px; /* Add some spacing between the text and image */
+    }
+    
+    #honor-fallen img.div_img {
+        width: 100%; /* Make the image fill the available column width */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 500px; /* Optional: control the maximum width */
+    }
+    
+    #honor-fallen p {
+        font-size: 1.2em; /* Adjust text size if needed */
     }
 }

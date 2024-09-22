@@ -20,12 +20,53 @@ body {
     background-position: center;
 }
 
+ /* Main container styling */
+ .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #444343;
+            background-color: #465161;
+        }
 
+        /* For text content */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* For images */
+        .aside {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        /* First container - image on the right */
+        .container-right {
+            flex-direction: row;
+        }
+
+        /* Second container - image on the left */
+        .container-left {
+            flex-direction: row-reverse;
+        }
+
+        /* Image styling */
+        .aside img {
+            width: 100%;
+            height: auto;
+        }
+footer{
+    background-color: #a8a2a2;
+}
+       
 
 nav h2 a {
     display: block;
     margin: 10px;
-    color: #ffffff;
+    background-image: url(images/CAA_logo_by_Stephen_Loftus.webp);
     text-decoration: none;
     padding: 10px;
     border: 1px solid #000000;
@@ -36,6 +77,13 @@ nav h2 a:hover {
     background-color: #333;
     color: rgb(6, 20, 37);
 }
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
 </style>
 </head>
 
@@ -48,18 +96,206 @@ nav h2 a:hover {
      
     <nav>
         <div class="nav-links">
+            <img src="images/CAA.webp" alt="Emblem" style="display: block; margin: 0 auto; width: 20%;" class="navbar-image">
             <h2><a href="index.html">ONI</a></h2>
             <h2><a href="UN.html">UNSC Navy</a></h2>
             <h2><a href="UNMC.html">Marines</a></h2>
             <h2><a href="ODST'.html">ODSTs</a></h2>
             <h2><a href="worlds.html">Worlds</a></h2>
+            <h2><a href="Spartans.html">Spartans</a></h2>
         </div>
     </nav>
-    <img src="images/CAA.webp" alt="col_admin" class="navbar-image" >
     <section>
+<main>
+
+    <h2>The C.A.A.</h2>
+    <p>The Colonial Administration Authority was established by the Unified Earth Government in 2310, alongside the now defunct Colonial Military Authority. Formed two decades after the invention of the Shaw-Fujikawa Translight Engine, the CAA was tasked with planning for humanity's extra-solar settlement and colonization, spending the following decades preparing for the inevitable exodus from the Sol system that would occur. The Domus Diaspora began as colony ships left Sol to settle worlds in other systems, beginning with Reach and Tribute in the Epsilon Eridani system.
+
+        Prior to the onset of the Insurrection, many individuals felt sympathy for the rebels, blaming the Colonial Authority's bureaucrats for their increasingly poor understanding of the unique challenges among the Outer Colonies. However, as more radical insurgent factions abandoned politics, negotiations, and protesting for violence, targeting military infrastructure and key CAA supporters, support for the rebels soon died out as their actions grew more extreme. CAA buildings and personnel were heavily targeted by rebels late in the war. In 2497, the CMA was reorganized and absorbed into the United Nations Space Command, following a series of scandals throughout the Insurrection.
         
+        Over the course of the Human-Covenant War, the Unified Earth Government granted substantial authority to the UNSC as a result of emergency powers and breakdown of interstellar governance. The CAA was more resistant to the takeover than the UEG proper, and thus it was stripped of most of its power. Despite this, the CAA Factbook was still being updated as late as 2550. Following the Covenant War, power was restored to the UEG and the CAA returned to its administrative duties as a division of the UEG.</p>
+
+       <h2>Organization and powers</h2>
+       <p>The Colonial Administration Authority serves as the administrative body for the colonies of the Unified Earth Government. In this capacity, the CAA governes the colonies in the UEG's name, its bureaucrats aiding in the management of population and employment, providing power for new colonies, and ensuring the quality of colonial infrastructure. However, colonies maintained sovereignty to some degree, as mandated by the Colonial Authority's own charter. The CAA has kept extensive files on every colony, world, and city under its care. The document containing these files was referred to as the CAA Factbook.</p>
+       <img src="images/CAA_1.webp" alt="caa Factbook">
+       <p> These files contained everything from topographic maps to the information on the materials the city sewer system was built from. The CAA provided this information to UNSC military forces upon request, and it was very helpful when defending colonies from Covenant attack. In addition, the CAA oversaw the Outer Colony vaccination program which held the largest DNA database of the human population. The Colonial Military Authority served as the military and policing arm of the CAA, until it was folded into the United Nations Space Command in 2497. The CAA was also responsible for the colonization of worlds, as evident by the "CAA" ship prefix on their colony ships, such as CAA Butterworth and CAA Casbah.</p>
+    </section>
+    <section>
+        <h2>Interplanetary age</h2>
+        <p>The concept of space colonization was born out of the need to expand human habitation outside of Earth to prevent overpopulation, to alleviate the consumption of Earth's resources by conducting planetary mining on other worlds, and to better understand the universe as human civilization expanded. Various approaches were suggested to achieve this, such as colonization efforts of the Moon and Mars, building facilities on orbiting asteroids and creating artificial platforms.
+
+            The first recorded success of human colonization in the modern age was made in the later half of the 21st century, more specifically in 2080. The Moon and Mars saw humanity's first expansion, followed by a number of asteroids and the natural satellites orbiting Jupiter. The rapid pace of interplanetary colonization was driven by commercial interests more than the efforts on the part of national governments: Earth bio- and nanotechnology corporations sought to conduct scientific research unhindered by Earth's international law as well as its gravity. Mars, in particular, quickly became an important hub of leading-edge science and industry, and would continue to be so for hundreds of years, particularly in the area of spaceship manufacturing. Advancements in terraforming technologies transformed many of the formerly inhospitable planets and moons of the Solar System into worlds capable of sustaining life.
+            
+            Despite these successes, the efforts did not solve Earth's overpopulation issue. It eventually led to political unrest, contributing to the formation of political movements promising independence from the national governments on Earth and the perceived oppression by the United Nations. Operating across the colonized worlds and orbital platforms of the Sol system, the Frieden movement and the Koslovics were the most prominent of these rebel factions. Beginning with a Frieden attack on the United Nations Colonial Advisors in the Jovian Moons and the subsequent UN response, battles were fought over the colony worlds—as well as Earth itself—from 2160 to 2170, culminating in a UN victory in the Interplanetary War. The outcome of the space wars led to the establishment of the Unified Earth Government as a centralized governing body tasked to ensure Earth's influence over the colony worlds and a powerful, united military force known as the United Nations Space Command.
+        </p>
+        <p>(Note: After the war with the Covenant, many surviving records of our colonies are either inconsistent, incomplete, or even unreliable resulting in numerous entries being either missing or partially incomplete the documents relating to glassed planets or "Glasslands", As of January 2553, have been moved to the glasslands section of the glassings page. this list includes planets that we have lost contact or that we at the (CAA) believes to be lost. However, this list is subject to change as mor insormatin is made known. The following list consists of planets that we know that for whatever reason the Covenant never encountered or survived being glassed. for more informatin on Orbital plasma bombardment (O.P.B.s) please visit the wapoint page on glassing)</p>
+    </section>
+    <h1>Sol System</h1>
+
+
+        <!-- First container with image on the right -->
+    <section class="container container-right">
+        <div class="content">
+            <h2>Earth</h2>
+            <p>Earth, also known as Sol III, is the third planet and one of four terrestrial worlds in the Sol system. It is the presumptive homeworld of the human species, though some ancient humans disputed this due to lost records during technological dark ages and the presence of human ruins on other worlds. Earth is the capital world of the Unified Earth Government and home to the headquarters of the United Nations Space Command.
+
+                With a population of around ten billion, Earth was the most populated planet in UEG territory prior to the Covenant invasion. Despite significant population loss due to the Covenant attack and a large-scale evacuation, the population rose to several billion again by the end of 2553.</p>
+        </div>
+        <aside class="aside">
+            <img src="images/halo_Earth.webp" alt="Earth" class="png-img">
+        </aside>
     </section>
 
-    
+    <!-- Second container with image on the left -->
+    <section class="container container-left">
+        <div class="content">
+            <h2>Luna</h2>
+            <p>Luna, often referred to as the Moon, is the only natural satellite of Earth. Luna is home to a large human population and the renowned Luna OCS Academy. Luna houses a number of skyhook defense complexes suspended in its low orbit. Luna is also the name generally used to refer to the populated colonies across the moon. Human beings took their first steps on Luna in 1969. By 1971, US Apollo 14 astronaut Edgar Dean Mitchell was the 6th human to have walked on the moon. Humans began settling on Luna around 2080. During the Interplanetary War, Vladimir Koslov and his family were killed in a bombing at Lake Autolycus on Luna. The Colonial Administration Authority had the Odyssey along with hundreds of Phoenix-class colony ships and Euphrates-class colony ships made over Luna.The Domus Diaspora was launched from Luna in 2362.
+
+                By 2492, a governing body of Luna was known as Luna Confederated States, the State of Mare Nubium being one of the said states. The Academy at Mare Nubium, known more generally as the Luna OCS Academy, was located here. </p>
+                <h3>locations</h3>
+                <ul>
+                    <li>Naniwa</li>
+                    <li>Crisium City</li>
+                    <li>Daedalus Crater</li>
+                    <li>Daedalus Complex</li>
+                    <li>Delambre</li>
+                    <li>Lake Autolycus</li>
+                    <li>Mare Cognitum</li>
+                    <li>Mare Nubium</li>
+                    <li>State of Mare Nubium</li>
+                    <li>County of Newton</li>
+                    <li>Shadow Perimeter 3</li>
+                    <li>Asimov Center</li>
+                    <li>Luna OCS Academy</li>
+                    <li>Mare Insularum</li>
+                    <li>Armstrong Alley</li>
+                    <li>Mare Imbrium</li>
+                    <li>Ankara</li>
+                    <li>Anakara Resiliency Chamber</li>
+                    <li>"Bosque de Negro"</li>
+                    <li>Mare Frigoris</li>
+                    <li>Procellarum Basin</li>
+                    <li>Tycho Observation Facility</li>
+                    <li>UNSC Transit Dock L22</li>
+                    <li>UNSC Naval Archives</li>
+                </ul>
+                
+        </div>
+        <aside class="aside">
+            <img src="images/Luna_2.jpg" alt="luna">
+        </aside>
+    </section>
+    <section class="container container-right">
+        <div class="content">
+            <h2>Mars</h2>
+            <p>Mars, also known as Sol IV, is the fourth planet of the Sol system, and one of four terrestrial worlds. One of the first human interplanetary colonies,Mars is a major industrial center and one of the largest in the Sol system.Mars is home to the UNSC Navy's primary shipyards and the Orbital Drop Shock Troopers' headquarters in the city of Kenosha, Tanais. In 2080, Mars became the first planet colonized by humanity during the late 21st century's wave of interplanetary colonization. Driven by corporations seeking to escape Earth's gravity and legal constraints, Mars quickly evolved into a hub for industry and advanced scientific research, particularly in nano- and biotechnologies. Robotics-driven manufacturing and spacecraft construction flourished, especially in the Argyre Planitia region. Even before terraforming, Mars was one of the largest industrial centers in the Sol system. With advancements in terraforming technology, it transformed into a planet with near-Earth conditions, attracting many settlers. In the 22nd century, a man from Mars led a failed habitat-ship project, fleeing to the Amazon, where he misled the uncontacted Khabnathwa people into believing he was their god-king, ultimately leading to the destruction of their culture.  </p>
+            <h4>locations</h4>
+            <ul>
+    <li>Acheron Fossae</li>
+    <li>Gdynia</li>
+    <li>Acidalia</li>
+    <li>Argyre Planitia</li>
+    <li>Eos Chasma</li>
+    <li>Shoreline</li>
+    <li>Misriah Munitions Training Range</li>
+    <li>First Mars Technical</li>
+    <li>Ganymede</li>
+    <li>Katagalugan</li>
+    <li>New Legaspi</li>
+    <li>New Manila</li>
+    <li>Killingham Street</li>
+    <li>Lake Komeno</li>
+    <li>Mare Erythraeum</li>
+    <li>Tricode Village</li>
+    <li>Mount Sharp</li>
+    <li>New Harmony</li>
+    <li>New Paris</li>
+    <li>Paris Island</li>
+    <li>Oenotria</li>
+    <li>Olympus Highlands</li>
+    <li>Oros Trading Company Headquarters</li>
+    <li>Seven Hills</li>
+    <li>Losantiville</li>
+    <li>Syrtis Major aerospace port</li>
+    <li>Tanais</li>
+    <li>Kenosha</li>
+    <li>Terra Cimmeria</li>
+    <li>Valles Marineris</li>
+    <li>Tenderloin District</li>
+    <li>Wesley General Hospital</li>
+    <li>Martian Elementary Education Complex</li>
+</ul>
+<h4>Economy</h4>
+<p>Mars is one of the most industrialized worlds in human space, second only to Earth and Reach. It hosts a critical shipyard complex, particularly after the Fall of Reach, with the Martian Metals Shipyards and Aerofabrique SA present. The surface features massive road trains for transporting cargo between cities. Misriah Armory, the largest military weapons manufacturer in human history, is based here, along with Acheron Security. Additionally, a boutique firm developed the Envy VISR but delayed sharing it with the UNSC due to its anti-military stance. Mars is also known for producing a unique whiskey enjoyed by Michael Stanforth.</p>
+        </div>
+        <aside class="aside">
+            <img src="images/Mars (1).jpg" alt="mars">
+        </aside>
+    </section>
+    <h1>Inner Colonies</h1>
+    <section class="container container-left">
+        <div class="content">
+            <h2>Barrow (Eta 7 Sigma c)</h2>
+            <p>Barrow boasts a rich and storied history, both politically and environmentally. The system was first confirmed in 2350 and became a site of colonization in 2412. Early settlers quickly realized that Barrow was a unique world in its own right. Over the past century and a half, the planet's scientific community has consistently returned from expeditions with remarkable discoveries, showcasing its incredible diversity.</p>
+            <h4>Geography</h4>
+            <p>Barrow, only lightly tectonically active, is experiencing early continental drift, approximately 2 billion years behind Earth. Its original supercontinent, Premoire Terre, is believed to have split into two major plates: Premiore Pulimias (Primary Crescent) and Occiderram (West Land), with a third landmass, Yuig Reichei (South Reach), forming in the Antarctic region. As the plates separate, biodiversity is expected to increase, aided by mountain ranges that divide land and create unique ecosystems.</p>
+            <h4>Notable Features</h4>
+            <ul>
+                <li><strong>Premiore Pulimias:</strong> Contains the Cascadia Super-Range, a vast mountain range rich in titanium, and Cascadian Bay, a mega harbor essential for aquaculture and storm protection.</li>
+                <li><strong>Premoire Boreal:</strong> A thick boreal rainforest covering about 4 million square miles.</li>
+                <li><strong>Lesser Boreal:</strong> Slightly smaller, this rainforest is crucial for breeding marine mammals.</li>
+                <li><strong>Occiderram:</strong> Home to the Breach Salt Marsh, a biodiversity hotspot, and the Noirge Desert, a harsh volcanic region.</li>
+                <li><strong>Yuig Reichei:</strong> A dormant supervolcano with extensive cave systems supporting a unique ecosystem.</li>
+            </ul>
+            <h4>Planetary System</h4>
+            <p>Barrow has one moon, Rye, a small, rust-colored companion, crucial for various installations.</p>
+            <h4>Climate</h4>
+            <p>Barrow features temperate rainforests and arctic tundra, with an average temperature of 11.1°C. The equator experiences temperatures around 23°C (77°F) during the day and drops to 14°C (59°F) at night.</p>
+            <h4>Life and Biology</h4>
+            <ul>
+                <li><strong>Monkola:</strong>An intelligent native species resembling a mix of koalas and spider monkeys.</li>
+                <li><strong>Haulker:</strong> A large mammalian species native to Barrow, the Haulker is used unironically in farming areas for its hauling capacity, females are also used for their milk and the livestock animal has lead to many Barrow-original home meals.</li>
+                <li><strong>Jackalope:</strong> Barrow's own myth come to reality is the Jackalope which bears a striking resemblance to the 20th century popularized fictional TaunTaun especially in winter when its wooly white coat grows in. The males of the species also feature antelope like horns which serve a variety of roles for farmers and livestock families. The Jackalope stands nearly ten feet tall with females usually between eight and nine feet in height. Jackalopes are used for their light hauling capacity, moderate ridability, meat, milk, and ivory in low amounts.</li>
+                <li><strong>Wildermoose:</strong>The Wildermoose, resembling an Earth moose, is a highly territorial creature known for aggressively asserting dominance over even deceased opponents. This behavior may help it mark territory by embedding its scent in the environment. Herds of Wildermoose roam cold, hilly regions or form small family units in forests.
+
+                    In Barrow's arctic regions, most animals are woolly or have dense fur to survive the cold, while marine life relies on blubber for warmth. Only animals near the equator may lack fur, and even they often have patchy coverage. </li>
+                <li><strong>Noirge Fox:</strong>The Noirge Fox, native to the Noirge Desert, shows significant adaptation among Barrow's mammals, resembling marsupials. Its evolutionary traits may be due to limited competition and resources, leading to shorter gestation periods. Similar to squirrels, these foxes hide in volcanic crevices. Their horn-like skulls are crucial for detecting storms and other ecological signals via ultra- and infrasonic sounds, enabling them to communicate in ways that evade predators. </li>
+            </ul>
+        </div>   
+            <aside class="aside">
+              <img src="images/Barrow_MAP.webp" alt="barrow">
+            </aside>
+        
+    </section>
+    <section class="container container-right">
+        <div class="content">
+            <h2>Tribute(Epsilon Eridani III)</h2>
+            <p>Tribute, also known as Epsilon Eridani III, is the third planet in orbit around Epsilon Eridani, Tribute is orbited by a single natural satellite Emese. Tribute is one of the most prominent commercial colonies in all of human-occupied space, with a large population and thriving spaceport traffic. Its strong economy was centered around the planet's large industrial capacity. Tribute's fall to the Covenant in 2552 was considered to be one of the tragedies of the Human-Covenant War, which resulted in huge economic ramifications on Earth and the surviving colonies in the post-war period. However, the planet was not completely lost and its surviving residents have begun to rebuild Tribute's once powerful economy. it is one of few planets that has been re-colonized after its glassing.</p>
+        </div>
+            <aside class="aside">
+                <img src="images/tribute.jpg" alt="tribute">
+            </aside>
+        
+    </section>
+    <section class="container container-left">
+        <div class="content">
+            <h2>Falaknuma</h2>
+            <p>During the Covenant's brutal campaign across the Outer Colonies, Falaknuma was not a hub of trafic to the UNSC Navy. The colony housed a base for a segment of the Prowler Corps and was defended by a few frigates under the command of Arthur Resnick.
+
+            In 2535, at the time Lieutenant Jacob Keyes escorted a mission to this colony aboard the UNSC Midsummer Night. During this time, he lead escort of an exodus ship witch rescued an unprecedented number of servivors of the glassed planet Madrigal, this ship constructed from an astroid this "habitat Exodus" eventualy broke up creating a significant navigational hazard around the planet, which experts estimated would take years to clear. Following the evacuation of survivors from Exodus, many were placed in refugee camps throughout Falaknuma, with some quickly disappearing.
+            
+            On March 6, 2543, a minor skirmish occurred between a Sinaris-pattern heavy destroyer and Battle Group Sierra-3 in the 18 Scorpii system, where the UNSC Navy was supported by insurrectionist forces.</p>
+         </div>   
+            <aside class="aside">
+                <img src="images/earth-ring-far.jpg" alt="Falaknuma">
+            </aside>
+        
+
+        </section>
+</main>
+<footer>
+    <p>&copy;2555 United Earth Government</p>
+</footer>
 </body>
 </html>

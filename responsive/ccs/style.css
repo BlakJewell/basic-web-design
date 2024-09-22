@@ -31,6 +31,9 @@ ul li {
 }
 /* mobile styles */
 @media (min-width: 320px) {
+    .navbar-image {
+        max-width: 30%; /* You can reduce the size specifically for desktop */
+    }
     nav {
         text-align: center;
         padding: 5px;
@@ -122,22 +125,6 @@ ul li {
         border: 2px solid blanchedalmond;
     }
     .navbar-image {
-        max-width: 30%; /* You can reduce the size specifically for desktop */
-    }
-    #honor-fallen .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        align-items: center; /* Align items vertically in the center */
-        gap: 20px; /* Add some spacing between the text and image */
-    }
-    
-    #honor-fallen img.div_img {
-        width: 100%; /* Make the image fill the available column width */
-        height: auto; /* Maintain the aspect ratio */
-        max-width: 500px; /* Optional: control the maximum width */
-    }
-    
-    #honor-fallen p {
-        font-size: 1.2em; /* Adjust text size if needed */
+        max-width: 20%; /* You can reduce the size specifically for desktop */
     }
 }

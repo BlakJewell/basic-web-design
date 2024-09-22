@@ -40,7 +40,20 @@ p {
         
         hr {
             border-color: #706969;
-        }</style>
+        }
+        .navbar-image {
+        display: block;
+        margin: 0 auto;
+        width: 10%; /* Default size for larger screens */
+    }
+
+    @media (max-width: 768px) { /* Adjust for mobile devices */
+        .navbar-image {
+            width: 50%; /* Increase size on mobile */
+            max-width: 300px; /* Optional: sets a maximum size */
+        }
+    }
+        </style>
 </head>
 <body>
     <!-- Header -->
@@ -52,11 +65,13 @@ p {
 
     <nav>
         <div class="nav-links">
+            <div class="nav-links"><img src="https://i.redd.it/bkqmtauweyc61.png" alt="Emblem" style="display: block; margin: 0 auto; width: 20%;" class="navbar-image">
             <h2><a href="index.html">ONI</a></h2>
             <h2><a href="UN.html">UNSC Navy</a></h2>
             <h2><a href="UNMC.html">Marines</a></h2>
             <h2><a href="ODST'.html">ODSTs</a></h2>
-            <h2><a href="worlds.html">UNSC Worlds</a></h2>
+            <h2><a href="worlds.html">Worlds</a></h2>
+            <h2><a href="Spartans.html">Spartans</a></h2>
         </div>
     </nav>
     
@@ -64,8 +79,6 @@ p {
 
     <!-- Main Content -->
     <main> 
-        <!-- Images -->
-        <img src="https://i.redd.it/bkqmtauweyc61.png" alt="UNSC Logo" class="navbar-image">
         
         <h2>About the UNSC Navy</h2>
         <section id="multi_col">

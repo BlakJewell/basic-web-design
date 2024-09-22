@@ -36,23 +36,24 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 30px;
+nav h2 {
+    display: inline-block; /* Allows padding and margins to work effectively */
+    margin: 2px 0; /* Adjusts vertical spacing */
+    color: #333;
+    text-decoration: none;
+    padding: 5px 6px; /* Adds padding inside the border */
+    border: 1px solid #333; /* Keeps the border */
+    border-radius: 5px; /* Keeps the rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav h2 a {
-    display: block;
-    margin: 10px;
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
+    color: inherit; /* Makes the link color the same as the text color */
+    text-decoration: none; /* Removes underline from links */
 }
 
 nav h2 a:hover {
-    background-color: #333;
+    background-color: #333; /* Hover effect */
     color: rgb(255, 255, 255);
 }
 #honor-fallen .grid {
@@ -163,16 +164,18 @@ section {
     <h1>Welcome to the UNSC Marine Corps</h1>
 </header>
 <nav>
-    <div class="nav-links">
+    <div class="nav-links"><img src="images/Marine_corps_copy.webp" alt="Emblem" style="display: block; margin: 0 auto; width: 20%;" class="navbar-image">
+
         <h2><a href="index.html">ONI</a></h2>
         <h2><a href="UN.html">UNSC Navy</a></h2>
         <h2><a href="UNMC.html">Marines</a></h2>
         <h2><a href="ODST'.html">ODSTs</a></h2>
-        <h2><a href="worlds.html">UNSC Worlds</a></h2>
+        <h2><a href="worlds.html">Worlds</a></h2>
+        <h2><a href="Spartans.html">Spartans</a></h2>
     </div>
-</nav>
 
-    <img src="images/Marine_corps_copy.webp" alt="Emblem" style="display: block; margin: 0 auto;"class="navbar-image">
+  
+</nav>
 
 
 

@@ -5,6 +5,24 @@
     display: block;
     margin: 0 auto; /* Center the image */
 }
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Minimum width for each column */
+}
+
+.column img {
+    max-width: 100%; /* Make images responsive within columns */
+    height: auto;
+}
+
 body {
     font-size: 120%;
 }

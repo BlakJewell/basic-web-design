@@ -1,0 +1,150 @@
+/* global styles */
+.navbar-image {
+    box-shadow: none; /* Removes the box shadow */
+    max-width: 14%; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+p {
+    font-family: "Roboto Mono", monospace;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Minimum width for each column */
+}
+
+.column img {
+    max-width: 100%; /* Make images responsive within columns */
+    height: auto;
+}
+
+body {
+    font-size: 120%;
+}
+.png-img{
+    box-shadow: none;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+ul li a {
+    display: block;
+        height: 30px;
+        margin-top: 5px;
+        text-align: center;
+}
+ul li {
+    display: block;
+        text-align: center;
+}
+ul li {
+    font-size: 1.1em;
+}
+/* mobile styles */
+@media (min-width: 320px) {
+    .navbar-image {
+        max-width: 30%; /* You can reduce the size specifically for desktop */
+    }
+    nav {
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    nav div {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav h2 {
+        display: block;
+    }
+    nav h2 a {
+        display: block;
+        height: 30px;
+        margin-top: 5px;
+    }
+    header {
+        text-align: center;
+        display: block;
+        font-size: 20px;
+    }
+    main {
+        padding: 20px;
+    }
+    
+    h2, h3 {
+        text-align: center;
+        text-shadow: 1px 1px 1px rgb(66, 65, 65); 
+    }
+    footer {
+        text-align: center;
+        padding: 40px;
+    }
+    img {
+        max-width: 100%; /* Ensures images never exceed their container width */
+        height: auto; /* Keeps the aspect ratio */
+    }
+    
+
+}
+/*Tablet Style*/
+@media (min-width: 768px ){
+    nav h2 {
+        display: inline-block
+    }
+    nav h2 a {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        margin: 20px;
+    }
+    img {
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 0px -2px 20px 0px #3d3c3c;
+    }
+}
+/* Desk top style*/
+@media (min-widthP: 1024px) {
+    #container{
+        width: 65%;
+        margin: 20px auto;
+        border: 4px solid bisque;
+        border-radius: 20px;
+    }
+    nav h2 a {
+        padding: 2px;
+    }
+    nav {
+        padding: 2px;
+    }
+    hr {
+        display: none;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .multi_col {
+        display: flex;
+
+    }
+    .col {
+        margin:20px;
+        padding:20px;
+        border: 2px solid blanchedalmond;
+    }
+    .navbar-image {
+        max-width: 20%; /* You can reduce the size specifically for desktop */
+    }
+}

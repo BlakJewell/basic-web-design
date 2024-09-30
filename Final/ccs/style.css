@@ -11,7 +11,7 @@
     justify-content: space-between;
     margin: 20px 0;
 }
-p {
+p, h1, h2, h3, li {
     font-family: "Roboto Mono", monospace;
 }
 .column {

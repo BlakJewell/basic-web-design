@@ -2,66 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODST.navspec/waypoint</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ccs/style.css">
+    <title>Orbital Drop Shock Troopers</title>
     <link rel="icon" type="image/png" href="images/ODST_favicon.ico">
-    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inline CSS -->
     <style>
-        section {
-    margin-bottom: 20px;
-    background-color: rgb(228, 230, 216);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(75, 74, 74, 0.1);
+        body {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            overflow-x: hidden;
         }
-       body {
-            background-color: rgb(114, 114, 114);
-            color: #000000
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 40px 0;
+            background-image: url(images/nms-regicide-107410-20230526172257-1.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
         }
-        nav h2 a{
-            background-color: antiquewhite;
-            border-color: #000000;
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            background-color: #0d0d0d;
+            overflow: hidden;
+        }
+        nav .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav h2 {
+            margin: 0;
+        }
+        nav h2 a {
+            display: block;
+            padding: 15px 20px;
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: 0.3s, color 0.3s;
         }
         nav h2 a:hover {
-           background-color: #ffffff;
-           color: rgb(0, 0, 0);
-        }
-        body {
-  position: relative;
-  overflow-x: hidden; /* Prevents horizontal scrollbar */
-    }
-        footer {
-            background-color: #2a3841;
+            background-color: #333333;
             color: #ffffff;
         }
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -10px; /* Adjust this value to control how much of the image shows */
-  width: 1020px;    /* Adjust this to the width of your image */
-  height: 120vh;   /* Makes the image height equal to the viewport height */
-  background-image: url("https://ih1.redbubble.net/image.777401456.3253/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; /* Ensures the image covers the container */
-  background-position: center;
-  z-index: -1;     /* Places the image behind other content */}
-            
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 10px;
+        }
+        section p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        section img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        footer {
+            background-color: #000000;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav .nav-links {
+                flex-direction: column;
+            }
+            nav h2 a {
+                text-align: center;
+            }
+        }
     </style>
-
 </head>
 <body>
 
     <!-- Header -->
-    <header class="bg-dark text-white text-center py-4">
+    <header>
         <h1>Orbital Drop Shock Troopers</h1>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <div class="nav-links">
             <h2><a href="index.html">ONI</a></h2>
@@ -71,135 +116,122 @@ body::before {
             <h2><a href="worlds.html">Worlds</a></h2>
             <h2><a href="Spartans.html">Spartans</a></h2>
             <h2><a href="covenant.html">Covenant</a></h2>
-            <h2><a href="fallen.html">the fallen</a></h2>
+            <h2><a href="fallen.html">The Fallen</a></h2>
         </div>
     </nav>
     <hr>
-    <!-- Main content -->
     <main class="multi_col">
-        <img src="images/d47ai2x-13f61de1-57e2-4444-9e6e-5886237cc19d.png" alt="ODST_logo" width="300"class="navbar-image" >
+        <section>
+            <h2>Introduction and History</h2>
+            <img src="images/d47ai2x-13f61de1-57e2-4444-9e6e-5886237cc19d.png" alt="ODST Logo" width="300" class="navbar-image">
+            <p>The concept of deploying highly trained troops behind enemy lines by literally dropping them from orbit originates from 20th and 21st-century paratroopers. Despite mixed success, they proved the effectiveness of such tactics in large-scale warfare.</p>
+            <p>The United Nations initiated the concept in 2129, originally known as Drop Jet Platoons. The modern Orbital Drop Shock Troopers (ODSTs) emerged in 2163 with the formation of the UNSC Marine Corps. That year marked the first extraterrestrial deployment of UNSC Marines during the Mars Campaign against the Koslovic terrorists. After the Interplanetary War ended in 2170 with the signing of the Callisto Treaty, the ODSTs saw little action as Earth faced postwar challenges like overpopulation and famine.</p>
+        </section>
 
-        <!-- Introduction and History -->
-        <section class="col">
-            
-                <h2>Introduction and History</h2>
-            <p>The concept of deploying highly trained troops behind enemy lines by literally dropping them from orbit and giving a middle finger to newton by surviving, originates from 20th and 21st-century paratroopers. Despite mixed success, they proved the effectiveness of such tactics in large-scale warfare.
+        <!-- Insurrection -->
+        <section>
+            <h2>Insurrection</h2>
+            <p>The ODSTs re-emerged in 2490 during the civil conflict between the Unified Earth Government and Insurrectionists. Using members of the ORION Project as models, they enhanced their reputation and training. Leading up to 2525, they conducted high-risk operations to thwart Insurrectionist activities, aiming to prevent attacks on civilians and disrupt enemy supply lines.</p>
+            <p>The 10th Shock Troops Battalion was deployed to various locations, including Jericho VII, Arcadia, and Andesia, to combat Insurrectionist forces. During these operations, they faced fierce resistance and suffered many casualties.</p>
+        </section>
 
-                The United Nations initiated the concept in 2129, originally known as Drop Jet Platoons. The modern Orbital Drop Shock Troopers (ODSTs) emerged in 2163 with the formation of the UNSC Marine Corps. That year marked the first extraterrestrial deployment of UNSC Marines during the Mars Campaign against the Koslovic terorists. After the Interplanetary War ended in 2170 with the signing of the Callisto Treaty, the ODSTs saw little action as Earth faced postwar challenges like overpopulation and famine.</p>
-                <h2>Insurrection</h2>
-                <p>The ODSTs re-emerged in 2490 during the civil conflict between the Unified Earth Government and Insurrectionists. Using members of the ORION Project as models, they enhanced their reputation and training. Leading up to 2525, they conducted high-risk operations to thwart Insurrectionist activities, aiming to prevent attacks on civilians, and to disrupt enemy supply lines.
+        <!-- Human-Covenant War -->
+        <section>
+            <h2>Human-Covenant War</h2>
+            <p>With the Covenant attack on Harvest in 2525, the ODSTs shifted their focus to this new alien threat. They prepared for critical engagements and high-risk missions throughout the war. In 2526, ODSTs were deployed to the Corbulo Academy on Circinius IV during a Covenant assault.</p>
+            <p>They participated in early battles against the Covenant, such as the Battle of Hat Yai and the Battle of Arcadia, assisting in defending key locations and facilitating civilian evacuations. The ODSTs launched assaults to reclaim planets from Covenant occupation, demonstrating their resilience and strategic importance.</p>
+            <p>Following the enactment of the Cole Protocol in 2535, ODST teams were tasked with securing navigation data to protect Earth's location. They engaged in numerous operations, including the Battle of Jericho VII, missions on Heian, Skopje, Sigma Octanus IV, New Jerusalem, Tribute, and Ariel. The Fall of Reach in 2552 was a significant moment, where many ODSTs lost their lives defending the planet.</p>
+        </section>
 
-                    The 10th Shock Troops Battalion was deployed to various locations, including Jericho VII, Arcadia, and Andesia, to combat Insurrectionist forces. During these operations, they faced fierce resistance and suffered many casualties.
-                    
-                    </p>
-                    
-                    <h2>Human-Covenant War</h2>
-                    <p>With the Covenant attack on Harvest in 2525, the ODSTs shifted their focus to this new alien threat. They prepared for critical engagements and high-risk missions throughout the war. In 2526, ODSTs were deployed to the Corbulo Academy on Circinius IV during a Covenant assaults.
-
-                        They participated in early battles against the Covenant, such as the Battle of Hat Yai and the Battle of Arcadia, assisting in defending key locations and facilitating civilian evacuations ect. The ODSTs launched assaults to reclaim planets from Covenant occupation, demonstrating their resilience and strategic importance.
-                        
-                        Following the enactment of the Cole Protocol in 2535, ODST teams were tasked with securing navigation data to protect Earth's location. They engaged in numerous operations, including the Battle of Jericho VII, missions on Heian, Skopje, Sigma Octanus IV, New Jerusalem, Tribute, and Ariel. The Fall of Reach in 2552 was a significant moment, where many ODSTs lost their lives defending the planet.</p>
-                        <h2>Battle for Earth</h2>
-                        <img src="images/ih_odst_man02c.jpg" alt="rescue" width="500">
-                        <p style="text-align: center;">(image captired from secutity cam of PO1 Jack Morales leading civilian evacuation of New Mombasa)</p>
-                        <p>After the loss of Reach, the ODSTs fought in the pivotal Battle for Earth in October 2552. They engaged Covenant forces on orbital platforms but faced severe losses as stations like Malta and Athens were destroyed. ODST teams attempted to board the Prophet of Regret's carrier over New Mombasa but were largely unsuccessful due to the carrier's sudden slipspace jump.
-
-                            The defense of Earth saw ODSTs battling across the globe and in space against overwhelming Covenant forces. In November 2552, they participated in various critical operations. Notably, two ODSTs from the 2nd Shock Troops Battalion aided in locating Spartan John-117 after his crash landing on Earth, a mission that proved essential for coordinating Earth's defenses. one of the two gave his life to ensure the mission's sucsess CPL T.Rymann took up a sniper position to buy his fellow ODST PVT S.Hartley time to lock on to the Master Chief's signal in doing so he was flanked and killed by a brute cheiftain.
-                            
-                            </p>
-            
-            
+        <!-- Battle for Earth -->
+        <section>
+            <h2>Battle for Earth</h2>
+            <img src="images/ih_odst_man02c.jpg" alt="Rescue Mission">
+            <p style="text-align: center;"><em>PO1 Jack Morales leading civilian evacuation of New Mombasa.</em></p>
+            <p>After the loss of Reach, the ODSTs fought in the pivotal Battle for Earth in October 2552. They engaged Covenant forces on orbital platforms but faced severe losses as stations like Malta and Athens were destroyed. ODST teams attempted to board the Prophet of Regret's carrier over New Mombasa but were largely unsuccessful due to the carrier's sudden slipspace jump.</p>
+            <p>The defense of Earth saw ODSTs battling across the globe and in space against overwhelming Covenant forces. In November 2552, they participated in various critical operations. Notably, two ODSTs from the 2nd Shock Troops Battalion aided in locating Spartan John-117 after his crash landing on Earth, a mission that proved essential for coordinating Earth's defenses. One of the two gave his life to ensure the mission's success. Corporal T. Rymann took up a sniper position to buy his fellow ODST Private S. Hartley time to lock onto the Master Chief's signal. In doing so, he was flanked and killed by a Brute Chieftain.</p>
         </section>
         <hr>
 
         <!-- Roles and Operations -->
         <section>
-                <h2>Roles and Operations</h2>
-            <img src="images/Mitchell_Drop.png" alt="mitch drop cam">
-            <p style="text-align: center;">(image captured from Pvt dimytry's pod-cam of GySGt Frank Mitchell emerging from his drop pod under fire after landing on Tribute.)</p>
-            <p>Serving as the rapid reaction force of the UNSC Marine Corps, Orbital Drop Shock Troopers are distinguished by their unconventional deployment method known as "transorbital support interdiction." This involves dropping troopers to a planet's surface aboard small, purpose-built deployment vehicles. This approach allows them to conduct a variety of missions against targets that conventional forces cannot approach undetected. Trained for any kind of landing operation, ODSTs expect to arrive in hellish conditions and engage in incredibly difficult combat zones.
+            <h2>Roles and Operations</h2>
+            <img src="images/Mitchell_Drop.png" alt="GySGt Frank Mitchell">
+            <p style="text-align: center;"><em>GySgt Frank Mitchell emerging from his drop pod under fire after landing on Tribute.</em></p>
+            <p>Serving as the rapid reaction force of the UNSC Marine Corps, Orbital Drop Shock Troopers are distinguished by their unconventional deployment method known as "transorbital support interdiction." This involves dropping troopers to a planet's surface aboard small, purpose-built deployment vehicles. This approach allows them to conduct a variety of missions against targets that conventional forces cannot approach undetected. Trained for any kind of landing operation, ODSTs expect to arrive in hellish conditions and engage in incredibly difficult combat zones.</p>
+            <p>Deployment via Single Occupant Exoatmospheric Insertion Vehicles (SOEIVs) is often considered more effective than traditional dropship methods. It enables spacecraft to make quick passes over a planet and deploy hundreds of ODSTs rapidly. Since they are deployed individually rather than together in one ship, the casualty rate is lower compared to conventional dropship deployments.</p>
+            <p>Each ODST combat team specializes in particular mission sets but is expected to be adaptable to any situation. ODSTs drop from orbit onto terrestrial environments, often landing behind enemy lines. They are tasked with eliminating enemy units and clearing landing zones for following troops. ODSTs also serve as the primary special forces raiding unit of the Marines, deployed to tip the scales in close battles, raid enemy bases, capture strategically valuable points, and eliminate high-value targets. Similar to their infantry counterparts, ODST units of varying strength are stationed aboard many UNSC vessels and installations.</p>
 
-                Deployment via Single Occupant Exoatmospheric Insertion Vehicles (SOEIVs) is often considered more effective than traditional dropship methods. It enables spacecraft to make quick passes over a planet and deploy hundreds of ODSTs rapidly. Since they are deployed individually rather than together in one ship, the casualty rate is lower compared to conventional dropship deployments.
-                
-                Each ODST combat team specializes in particular mission sets but is expected to be adaptable to any situation. ODSTs drop from orbit onto terrestrial environments, often landing behind enemy lines. They are tasked with eliminating enemy units and clearing landing zones for following troops. ODSTs also serve as the primary special forces raiding unit of the Marines, deployed to tip the scales in close battles, raid enemy bases, capture strategically valuable points, and eliminate high-value targets. Similar to their infantry counterparts, ODST units of varying strength are stationed aboard many UNSC vessels and installations.</p>
-                
-                <h2>Specialized Operations Performed by ODSTs:</h2>
-                <ul>
-                    <li>Deep Ground Surveillance (DGS) and Long-Range Reconnaissance: Conducting patrols in small groups, usually far behind enemy lines. While they may direct air or artillery strikes against enemy positions, their primary goal is to remain unobserved, focusing on intelligence gathering rather than direct combat.</li>
-                    <li>Direct Action (DA): Executing short-duration strikes and other small-scale offensive actions in hostile or politically sensitive environments. These operations employ specialized military capabilities to seize, destroy, capture, exploit, recover, or damage designated targets. Direct action missions carry higher physical and political risks and require precise use of force to achieve specific objectives.</li>
-                    <li>Unconventional Warfare: Engaging in military and paramilitary operations, often of long duration, conducted by indigenous or surrogate forces organized, trained, equipped, supported, and directed by an external source. This includes guerrilla warfare, covert operations, subversion, sabotage, intelligence gathering, and escape and evasion tactics.</li>
-                    <li>Counter-Terrorism Operations: Responding to terrorist threats and acts, both real and perceived, to neutralize potential dangers.</li>
-                    <li>Counter-Contraband Operations: Undertaking missions to recapture smuggled or stolen goods, disrupting enemy supply lines and illegal activities.</li>
-                    <li>Personnel and Special Equipment Recovery/Capture: Recovering and providing medical treatment to friendly personnel in combat environments, as well as capturing high-value individuals and securing critical equipment.</li>
-                </ul>
-            
-            
+            <h3>Specialized Operations Performed by ODSTs:</h3>
+            <ul>
+                <li><strong>Deep Ground Surveillance (DGS) and Long-Range Reconnaissance:</strong> Conducting patrols in small groups, usually far behind enemy lines. While they may direct air or artillery strikes against enemy positions, their primary goal is to remain unobserved, focusing on intelligence gathering rather than direct combat.</li>
+                <li><strong>Direct Action (DA):</strong> Executing short-duration strikes and other small-scale offensive actions in hostile or politically sensitive environments. These operations employ specialized military capabilities to seize, destroy, capture, exploit, recover, or damage designated targets. Direct action missions carry higher physical and political risks and require precise use of force to achieve specific objectives.</li>
+                <li><strong>Unconventional Warfare:</strong> Engaging in military and paramilitary operations, often of long duration, conducted by indigenous or surrogate forces organized, trained, equipped, supported, and directed by an external source. This includes guerrilla warfare, covert operations, subversion, sabotage, intelligence gathering, and escape and evasion tactics.</li>
+                <li><strong>Counter-Terrorism Operations:</strong> Responding to terrorist threats and acts, both real and perceived, to neutralize potential dangers.</li>
+                <li><strong>Counter-Contraband Operations:</strong> Undertaking missions to recapture smuggled or stolen goods, disrupting enemy supply lines and illegal activities.</li>
+                <li><strong>Personnel and Special Equipment Recovery/Capture:</strong> Recovering and providing medical treatment to friendly personnel in combat environments, as well as capturing high-value individuals and securing critical equipment.</li>
+            </ul>
         </section>
         <hr>
 
         <!-- Organization -->
         <section>
-            
-                <h2>Organization</h2>
-            <img src="images/desktop-wallpaper-halo-odst-halo-marine.jpg" alt="Organization">
-            <p>Under the operational authority of the Naval Special Weapons division of UNSC Special Forces, the Orbital Drop Shock Troopers (ODSTs) are a special operations unit within the UNSC Marine Corps. While not embedded within conventional UNSC forces, ODST units participate in joint operations and act as force multipliers, enhancing the effectiveness, morale, and willingness of those they fight alongside. There are at least four divisions of ODSTs, with the 105th Shock Troops Division being the most notable, as well as the 65th Shock Troops Division. The ODSTs also maintain Special Purpose Forces—a subset with additional training and equipment that enables them to operate in unique and challenging environments. Among these are the Air Assault units, nicknamed "Bullfrogs," who are trained as urban warfare specialists.
-
-                The number of ODST combat teams varies from company to company but generally consists of six to eight teams, each specializing in a particular mission set. Every ODST combat team includes between ten and fourteen members, each with a specific skill or function. ODSTs are also organized into fireteams of six to eight personnel. While each team and individual is expected to excel in their specialized skills and assigned missions, they are also expected to be flexible enough to adapt to any situation. Each ODST unit's equipment is tailored for specific missions and tasks, with operators proficient in a wide range of weapons, sensors, and mobility systems optimized for hazardous and difficult environments.
-                </p>
-                <img src="images/aboow05atoy31.webp" alt="cpo petrov">
-                <p style="text-align: center;">(image from base secutity cam of CPO yuri petrov heding to rally point after landing on Reach during the Castle Base assault.)</p>
+            <h2>Organization</h2>
+            <img src="images/desktop-wallpaper-halo-odst-halo-marine.jpg" alt="ODST Organization">
+            <p>Under the operational authority of the Naval Special Weapons division of UNSC Special Forces, the Orbital Drop Shock Troopers (ODSTs) are a special operations unit within the UNSC Marine Corps. While not embedded within conventional UNSC forces, ODST units participate in joint operations and act as force multipliers, enhancing the effectiveness, morale, and willingness of those they fight alongside. There are at least four divisions of ODSTs, with the 105th Shock Troops Division being the most notable, as well as the 65th Shock Troops Division. The ODSTs also maintain Special Purpose Forces—a subset with additional training and equipment that enables them to operate in unique and challenging environments. Among these are the Air Assault units, nicknamed "Bullfrogs," who are trained as urban warfare specialists.</p>
+            <p>The number of ODST combat teams varies from company to company but generally consists of six to eight teams, each specializing in a particular mission set. Every ODST combat team includes between ten and fourteen members, each with a specific skill or function. ODSTs are also organized into fireteams of six to eight personnel. While each team and individual is expected to excel in their specialized skills and assigned missions, they are also expected to be flexible enough to adapt to any situation. Each ODST unit's equipment is tailored for specific missions and tasks, with operators proficient in a wide range of weapons, sensors, and mobility systems optimized for hazardous and difficult environments.</p>
+            <img src="images/aboow05atoy31.webp" alt="CPO Yuri Petrov">
+            <p style="text-align: center;"><em>image captured from Security Cam of LT Yuri Petrov after landing on Concord.</em></p>
         </section>
-        <hr>
 
         <!-- Training -->
         <section>
             <h2>Training</h2>
-            <img src="images/hwduma31f1j11.webp" alt="tarkov train" width="340">
-            <p>Orbital Drop Shock Troopers undergo months of intense training beyond their previous military experience. Initially, candidates focus on physical fitness for three weeks, enduring daily runs, push-ups, and numerous obstacle courses that include simulations with slush, artificial snow, and live-fire exercises. They are trained to crawl for miles through environments filled with barbed wire, rubble, and destroyed buildings while instructors fire rounds just above their heads. Additionally, trainees practice jumping from high positions to prepare for transorbital drops. This rigorous process also serves to identify and remove those unfit to become ODSTs; candidates who cannot meet the standards are returned to their previous units.
-
-                Following physical conditioning, the next phase emphasizes squad tactics with a strong focus on teamwork. Candidates don full ODST training gear and are given weapons loaded with tactical training rounds (TTRs). They are then dropped at the base of a mountain and ordered to reach the peak alongside their drill instructor. Instructors may occasionally shoot trainees in the leg with TTRs, causing temporary paralysis, which forces slower candidates to crawl the rest of the way. The exercise is often repeated with added challenges, such as trainers acting as opponents armed with TTR-loaded weapons. Some trainees serve as distractions to help their peers eliminate adversaries.
-                
-                After mastering squad tactics, candidates receive advanced tactical training in fireteams. They face similar challenges but must now work closely within their teams to reach objectives. Once proficient individually, squad tactics are reintegrated, with multiple fireteams collaborating to achieve their goals, providing mutual support and suppressing opponents.
-                
-                The ODSTs have a dedicated training unit—the 340th ODST Combat Training Unit—which provides realistic combat environments for special forces personnel. Those with potential for Special Warfare assignments may be reassigned based on their capabilities. For example, Morgan Kinsano, an ODST, was reassigned to the Special Tactics and Equipment Group, leading the Firestorm Battle Group—a specialized unit focused on anti-infantry operations.
-
-                
-                
-                
-                
-                
-                
-                </p>
-            
-            
+            <img src="images/hwduma31f1j11.webp" alt="Training Exercise" width="400">
+            <p>Orbital Drop Shock Troopers undergo months of intense training beyond their previous military experience. Initially, candidates focus on physical fitness for three weeks, enduring daily runs, push-ups, and numerous obstacle courses that include simulations with slush, artificial snow, and live-fire exercises. They are trained to crawl for miles through environments filled with barbed wire, rubble, and destroyed buildings while instructors fire rounds just above their heads. Additionally, trainees practice jumping from high positions to prepare for transorbital drops. This rigorous process also serves to identify and remove those unfit to become ODSTs; candidates who cannot meet the standards are returned to their previous units.</p>
+            <p>Following physical conditioning, the next phase emphasizes squad tactics with a strong focus on teamwork. Candidates don full ODST training gear and are given weapons loaded with tactical training rounds (TTRs). They are then dropped at the base of a mountain and ordered to reach the peak alongside their drill instructor. Instructors may occasionally shoot trainees in the leg with TTRs, causing temporary paralysis, which forces slower candidates to crawl the rest of the way. The exercise is often repeated with added challenges, such as trainers acting as opponents armed with TTR-loaded weapons. Some trainees serve as distractions to help their peers eliminate adversaries.</p>
+            <p>After mastering squad tactics, candidates receive advanced tactical training in fireteams. They face similar challenges but must now work closely within their teams to reach objectives. Once proficient individually, squad tactics are reintegrated, with multiple fireteams collaborating to achieve their goals, providing mutual support and suppressing opponents.</p>
+            <p>The ODSTs have a dedicated training unit—the 340th ODST Combat Training Unit—which provides realistic combat environments for special forces personnel. Those with potential for Special Warfare assignments may be reassigned based on their capabilities. For example, Morgan Kinsano, an ODST, was reassigned to the Special Tactics and Equipment Group, leading the Firestorm Battle Group—a specialized unit focused on anti-infantry operations.</p>
         </section>
         <hr>
-
-        <!-- Equipment -->
         <section>
-            
-                <h2>Equipment</h2>
-            <div class="container">
-                <div>
-                    <h2>Battle Dress Uniform</h2>
-                    <img src="images/ODST-Battle-Armor.webp" alt="uniform" width="400">
-                    <p>The ODST battle dress uniform is the signature equipment used by the Orbital Drop Shock Troopers. The armor is vacuum-rated and allows for extra-vehicular activity for up to fifteen minutes. The helmet, a derivative of the standard-issue CH252 model, is equipped with modern communications gear, a heads-up display, and motion trackers. It also includes the Visual Intelligence System, Reconnaissance (VISR), a proprietary integrated data management system that provides navigational data, access to certain infrastructure systems, and storage for mission content.
-
-                        Manufactured by Misriah Armory, the ODST armor incorporates titanium composites in its plating to offer enhanced protection. The suit features a heating and cooling system capable of matching the infrared signature of the local weather conditions. There are several editions and variants of the armor, each designed with mission-specific functions.</p>
-                </div>
-                <h2>Drop Pod</h2>
-                <img src="images/halo_3___odst___prepare_to_drop_by_halomika_dc0h6n2-fullview.jpg" alt="drop" width="400">
-                <p>The ODSTs' iconic deployment method is the drop pod—a teardrop-shaped vehicle protected by a ceramic skin coating. Known for its risks and intense heat during descent, this method has earned the 105th ODST Division the nickname "Helljumpers." While most combat deployments use conventional dropships, the drop pod was designed as a more efficient means of orbital insertion for high-risk operations. Often launched from orbiting spacecraft or space stations, drop pods are equipped with the occupant's weapons, ammunition, and other supplies. Upon landing, each ODST is responsible for retrieving supplies from their Single Occupant Exoatmospheric Insertion Vehicle (SOEIV) and transporting them to their unit's temporary base.</p>
+            <h2>Equipment</h2>
+            <div>
+                <h3>Battle Dress Uniform</h3>
+                <img src="images/ODST-Battle-Armor.webp" alt="ODST Armor" width="400">
+                <p>The ODST battle dress uniform is the signature equipment used by the Orbital Drop Shock Troopers. The armor is vacuum-rated and allows for extra-vehicular activity for up to fifteen minutes. The helmet, a derivative of the standard-issue CH252 model, is equipped with modern communications gear, a heads-up display, and motion trackers. It also includes the Visual Intelligence System, Reconnaissance (VISR), a proprietary integrated data management system that provides navigational data, access to certain infrastructure systems, and storage for mission content.</p>
+                <p>Manufactured by Misriah Armory, the ODST armor incorporates titanium composites in its plating to offer enhanced protection. The suit features a heating and cooling system capable of matching the infrared signature of the local weather conditions. There are several editions and variants of the armor, each designed with mission-specific functions.</p>
             </div>
-            
-            
-        </section>
-        <hr>
+            <div>
+                <h3>Drop Pod</h3>
+                <img src="images/halo_3___odst___prepare_to_drop_by_halomika_dc0h6n2-fullview.jpg" alt="ODST Drop Pod" width="400">
+                <p>Drop pods are a crucial deployment method used by the two primary human military organizations in the galaxy: the United Nations Space Command (UNSC) and the Colonial Military Authority (CMA). The UNSC, in particular, heavily relies on drop pods due to the specialized units known as Orbital Drop Shock Troopers (ODSTs). These elite soldiers are experts in using drop pods to infiltrate enemy lines and execute special operations. While ODSTs are the primary users, Spartans and regular Marine forces also utilize drop pods for insertion missions. The deployment and operational protocols of drop pods are governed by UNSC Insertion Protocols.</p> 
+                <p>Orbital drop pods were first developed by humanity in the early 22nd century as a solution for "transorbital support interdiction." The inaugural deployment of ODSTs occurred during the Interplanetary War of the 2160s, where they were used against Koslovic forces on Mars. Since then, drop pods have been a staple in UNSC military tactics, seeing extensive use during the Insurrection and the Human-Covenant War.</p>
+                <h3>Advantages of Drop Pod Deployment</h3>
+                <p>Deploying troops via drop pods results in a lower overall attrition rate compared to standard dropship insertions. This is because each soldier is deployed individually, reducing the risk of multiple casualties that can occur if a larger craft like a Pelican dropship is destroyed. Even if some drop pods are lost to anti-aircraft fire, the total casualties are fewer than losing a dropship with numerous personnel on board.</p>
+                <h3>Deployment Procedure</h3>
+                <p>A standard ODST drop involves dozens or hundreds of individual pods launched from an orbiting starship performing evasive maneuvers. An artificial intelligence system controls the descent of each pod through the atmosphere to predetermined landing zones along routes designed to maximize evasion of enemy fire. Upon the commanding officer's signal, a thirty-second countdown begins before the pods are ejected. Depending on the vessel type—such as Halcyon-class and Marathon-class cruisers—the pods may be released via free drop or launched using magazine-fed coilgun launchers mounted on the ship.
 
+                    During descent, the pods spend most of the time in free fall, typically only a few minutes, before their braking systems activate to guide them into their landing sites. The pods have limited maneuvering capabilities for adjusting their landing zones and avoiding anti-air defenses. In some cases, ODSTs may deploy during meteor showers to disguise their entry among natural atmospheric debris.
+                    
+                    As the pods approach the ground, they deploy a drag chute—formally known as a "Drogue Panel"—from the upper panels to slow their descent. At approximately one kilometer above the surface, computer-controlled retrothrusters engage to rapidly decelerate the pod for a safe landing. Upon impact, detonation charges blow off the entrance hatch, allowing the occupant to exit immediately and engage in combat. If the pod lands in an unsuitable location, it retains enough rocket fuel for the occupant to reactivate the thrusters and "hop" to a better position.
+                    
+                    Pod Design and Features
+                    
+                    Inside, the drop pod contains a single crash seat facing the exterior hatch, which is equipped with hardened and shielded communications gear. This equipment provides the occupant with vital information during the drop and links the ODST team members. While inside the pod, the soldier's helmet communications are redundant unless the pod's systems fail. The crash harness offers minimal inertial dampening and comfort, though newer models have seen improvements. The exterior shell is made of Titanium-A armor; damage to this shell during atmospheric entry can result in the destruction of the pod.</p>
+                    <h3>Variants of Drop Pods</h3>
+                    <p>The design and manufacturing of drop pods are categorized mainly into Single Occupant Exoatmospheric Insertion Vehicles/Vessels (SOEIVs) and Human Entry Vehicles (HEVs).</p>
+                    <ul>
+                        <li><strong>M7650 Human Entry Vehicle:</strong>Introduced in 2461, this older model was used by both the UNSC and CMA. It saw extensive use during the Insurrection and the Human-Covenant War, especially on ships without dedicated ODST units. A more hevaly armored model that was still in service near the start of the Human-Covenant War. it is still prefered my some ODSTs. his variant features a box-like design with a door and airframe coated in Titanium-A armor. The door can serve as cover once expelled. The occupant sits in a crash harness with minimal comfort and basic course correction controls, though the pod's computer manages the descent. Upon atmospheric entry, the M8823 extends drogue panels and releases decoys to distract enemy fire while decelerating. Braking rockets engage at one kilometer above the surface. Side panels serve as storage bays for food, weapons, ammunition, and other supplies.<img src="images/HEV-ODST-scaled.jpg" alt="hev"> </li>
+                        <li><strong>M8900 Single Occupant Exoatmospheric Independent Entry Vehicle:</strong> A high-speed drop pod favored by ODST units during the later years of the Human-Covenant War. Preferred in the later years of the Human-Covenant War, the M8900 has an angular design with an armored prow and small armored windows. It is faster and more maneuverable than the M8823, making it ideal for drops into heavily defended areas. It features an air brake on top and reinforced impact plating on the bottom.<img src="images/H3ODST_DropPod_Concept_2_1.png" alt="soeiev1"></li>
+                        <li><strong>M9407 Single Occupant Exoatmospheric Independent Entry Vehicle:</strong> A modern, post-war drop pod equipped with advanced technologies, used by both ODSTs and Spartans. It a post-war design resulting from collaborations between the UNSC and military contractors. It includes improvements such as more reliable communications, limited inertial compensation, compatibility with gravitic-assist launch tubes, and enhanced structural integrity. The internal harness is configurable, compatible with the latest ODST and MJOLNIR armor systems. It also boasts more powerful maneuvering thrusters, a new air brake design, and advanced materials like metal matrix composites and thermal superconducting elements in the heat shield<img src="images/H5G_ODST_Drop_Pod_concept_3.webp" alt="SOEIVs2"></li>
+                    </ul>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer>
         <p>&copy; 2558 United Nations Space Command</p>
     </footer>
 

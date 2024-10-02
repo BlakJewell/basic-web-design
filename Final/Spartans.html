@@ -2,396 +2,392 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spart.un/waypoint</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ccs/style.css">
+    <title>SPARTAN Program</title>
     <link rel="icon" type="image/png" href="images/SPART_favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Inline CSS -->
     <style>
-        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-    background-image: url(images/fd9c230ad1a7c0fd3c753e9a664db4db.jpg);
-    background-attachment: fixed; /* Fixes the background image in place */
-    background-position: center;
-}
-
-nav h2 a{
-            background-color: rgb(82, 105, 66);
-            border-color: #000000;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            background-image: url('images/fd9c230ad1a7c0fd3c753e9a664db4db.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
         }
-        nav h2 a:hover {
-           background-color: #ffffff;
-           color: rgb(0, 0, 0);
+        a {
+            text-decoration: none;
+            color: inherit;
         }
-        p {
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        /* Navigation */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        nav .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        nav .nav-links h2 {
+            margin: 0 15px;
+        }
+        nav .nav-links h2 a {
+            background-color: #526942;
+            color: #e0e0e0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav .nav-links h2 a:hover {
+            background-color: #ffffff;
             color: #000000;
         }
-        /* Main container styling */
- .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #444343;
-            background-color: #4c686e;
+        nav .navbar-image {
+            width: 80px;
+            margin-right: 20px;
         }
-
-        /* For text content */
-        .content {
-            flex: 1;
-            padding: 20px;
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
-        footer {
-            background-color: #242323;
+        h1, h2, h3 {
+            color: #ffcc00;
+            margin-top: 40px;
         }
-        h1,h2,h3 {
-            color: #887e10;
-            text-shadow: 1px 1px 3px #0e0e0d;
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
-
-        /* For images */
-        .aside {
-            flex: 1;
-            max-width: 400px;
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
-        /* Image styling */
-        .aside img {
-            width: 100%;
-            height: auto;
-        }
-        div {
-            background-color: #1e301e;
-            border: #041224;
+        p, li {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 15px;
         }
         strong {
-            color: #7c741d;
-            text-decoration: underline;
-            text-transform: initial;
+            color: #ffcc00;
         }
-        p,li {
-            color: #ffffff;
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
         }
-        /* Resetting some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and background */
-body {
-    background-image: url(images/fd9c230ad1a7c0fd3c753e9a664db4db.jpg);
-    background-attachment: fixed; /* Fixes the background image in place */
-    background-position: center;
-    font-family: Arial, sans-serif; /* Adding a default font */
-}
-
-/* Navigation styles */
-nav h2 a {
-    background-color: rgb(82, 105, 66);
-    border-color: #000000;
-}
-
-nav h2 a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-}
-
-/* Main container styling */
-.container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #444343;
-    background-color: #4c686e;
-}
-
-/* For text content */
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #242323;
-    text-align: center;
-    padding: 10px 0; /* Adjust padding for the footer */
-}
-
-/* Heading styles */
-h1, h2, h3 {
-    color: #887e10;
-    text-shadow: 1px 1px 3px #0e0e0d;
-}
-
-/* Image styling */
-.aside {
-    flex: 1;
-    max-width: 400px;
-}
-.col_2{
-    background-color:#638b94;
-    padding: 10px;
-    border:10px #041224;
-    border-radius: 10px;
-}
-/* Responsive images */
-.aside img,
-.png-img,
-img {
-    width: 40%;
-    height: auto;
-}
-
-/* Styles for lists */
-ul {
-    list-style-type: disc; /* Default bullet points */
-    margin-left: 20px; /* Add space for bullets */
-}
-
-/* Media Queries for Responsive Design */
-@media (min-width: 768px) {
-    /* For larger screens, adjust flex properties */
-    .container {
-        flex-direction: row; /* Side by side layout */
-    }
-
-    .aside {
-        margin-left: 20px; /* Add space between text and image */
-    }
-
-    .aside img {
-        max-width: 100%; /* Ensures images are responsive */
-    }
-}
-
+        /* Images */
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .png-img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        /* Containers */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+        .content {
+            flex: 1 1 600px;
+            padding: 20px;
+        }
+        .aside {
+            flex: 1 1 300px;
+            padding: 20px;
+        }
+        /* Collapsible Sections */
+        details {
+            background-color: #2a2a2a;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        details summary {
+            font-size: 1.5em;
+            cursor: pointer;
+            user-select: none;
+            color: #ffcc00;
+            outline: none;
+        }
+        details[open] summary::after {
+            content: " ▲";
+            font-size: 0.8em;
+        }
+        details summary::after {
+            content: " ▼";
+            font-size: 0.8em;
+        }
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav .nav-links {
+                flex-direction: column;
+            }
+            nav .nav-links h2 {
+                margin: 10px 0;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .content, .aside {
+                flex: 1 1 100%;
+            }
+            .png-img {
+                width: 80%;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <header><h1>SPARTAN program</h1></header>
+    <!-- Header -->
+    <header>
+        <h1>SPARTAN Program</h1>
+    </header>
+    <!-- Navigation -->
     <nav>
         <div class="nav-links">
-            <img src="images/Spartan_Corps_Logo_Gold.webp" alt="Emblem" style="display: block; margin: 0 auto; width: 20%;" class="navbar-image">
+            <img src="images/Spartan_Corps_Logo_Gold.webp" alt="Emblem" class="navbar-image">
             <h2><a href="index.html">ONI</a></h2>
             <h2><a href="UN.html">UNSC Navy</a></h2>
             <h2><a href="UNMC.html">Marines</a></h2>
-            <h2><a href="ODST'.html">ODSTs</a></h2>
+            <h2><a href="ODST.html">ODSTs</a></h2>
             <h2><a href="worlds.html">Worlds</a></h2>
             <h2><a href="Spartans.html">Spartans</a></h2>
             <h2><a href="covenant.html">Covenant</a></h2>
-            <h2><a href="fallen.html">the fallen</a></h2>
+            <h2><a href="fallen.html">The Fallen</a></h2>
         </div>
     </nav>
-<main>
-    <h1>Origins</h1>
-    <p>"From the beginning Spartans were a weapon of last resort. We were built for combat and raised for war."
-        — Master Chief Petty Officer John-117</p>
-    
-    <section class="container container-right">
-    <h2>ORION Project</h2><aside class="aside"></aside>
-        <img src="images/OrionLogoSL (2).webp" alt="orion" style="display: block; margin: 0 auto; width: 50%;"  class="png-img">
-    </aside>
-    <p>The genesis of the SPARTAN programs occurred in 2321 with the activation of the ORION Project. Launched by the Office of Naval Intelligence, the project was named after the Greek hero Orion. The aim of the ORION Project was to create a special forces unit of biochemically augmented supersoldiers. Under the operational control of Naval Special Warfare Group One, the project was created to combat the growing Insurrection throughout the human Outer Colonies. The project enjoyed limited success but was ultimately disbanded after several years; however, its legacy lived on in the form of the subsequent SPARTAN programs. After the establishment of the SPARTAN-II program years later, the ORION Project was retroactively dubbed SPARTAN-I program.
-        
-     These candidates underwent rigorous testing and augmentations throughout the project's duration. However, the outcomes did not meet expectations, and the candidates were eventually integrated back into the regular military structure after the project was deemed ineffective and subsequently terminated. The lessons learned from ORION laid the groundwork for future programs aimed at developing enhanced soldiers for the UNSC.</p>
-     <h2>the Spartan-IIs</h2>
-     <p>Much about the SPARTAN-II program remains classified and cannot be disclosed. However, ONI has permitted us to share the following information: lead by the late Dr. Catherine Halsey The SPARTAN-II program marked the first significant success in the SPARTAN initiative, aimed at creating elite soldiers through mechanical and biological augmentation. Originally conceived as the second generation of the ORION Project, it was referred to as "Generation-II ORION." The SPARTAN-II program was the first to combine advanced exoskeleton technology with the soldiers' enhanced physiques.
+    <!-- Main Content -->
+    <main>
+        <h1>Origins</h1>
+        <p style="text-align: center;"><em>"From the beginning Spartans were a weapon of last resort. We were built for combat and raised for war."</em> — Master Chief Petty Officer John-117</p>
 
-        SPARTAN-IIs underwent the most extensive and invasive physical augmentations of all the Spartan generations, beginning the process at the early military age of 18 to 20. This method increased their physical mass and height to approximately seven feet.
-        
-        Generation II of the ORION Project was initiated in 2526 when it became necessary to explore more effective methods for combating the Covenant.        
-     </p>
-    </section>
-    <hr>
-    <section>
-    <div>
-    <h1 style="text-align: center;">What makes a SPARTAN</h1>
-    </div>
-        <img src="images/jye5a8gygwa51.jpg" alt="A_hero">
-        <div>
-            <h2>Augmentation</h2>
-            <ul>
-                <li>
-                    <strong>Occipital Capillary Reversal:</strong>
-                    <p>Surgery is performed on the occipital lobe of the left cerebral hemisphere, the visual processing center of the brain. The surgeon reverses the direction of blood flow in the capillaries to boost blood flow beneath the retina's rods and cones, enhancing visual perception. However, 11% of subjects may face retinal rejection and detachment, potentially causing permanent blindness.</p>
-                </li>
-                <li>
-                    <strong>Carbide Ceramic Ossification:</strong>
-                    <p>The candidate's bones are exposed via surgery, and advanced carbide ceramic material is grafted onto the skeletal structure. This makes the bones virtually unbreakable, but the coverage does not exceed 3% of total bone mass due to white blood cell necrosis. There is a 3.8% failure rate due to potential mutations and compromised bone marrow integrity,.</p>
-                </li>
-                <li>
-                    <strong>Catalytic Thyroid Implant:</strong>
-                    <p>A platinum pellet is implanted in the left thyroid gland, releasing human growth hormone to boost skeletal and muscle tissue growth. This hormone targets muscle fibers and osteoblasts for significant gains in muscle mass and bone strength. However, 2% of subjects may develop elephantiasis and experience suppressed sexual drive.</p>
-                </li>
-                <li>
-                    <strong>Muscular Enhancement Injections:</strong>
-                    <p>A protein complex is injected intramuscularly to increase muscle strength and endurance by enhancing the muscles' intracellular machinery. This results in increased density of connective tissues and decreased recovery time. 5% of test subjects may experience a fatal cardiac volume increase.</p>
-                </li>
-                <li>
-                    <strong>Superconducting Fibrification of Neural Dendrites:</strong>
-                    <p>This alteration enhances bioelectrical nerve transduction, resulting in a 300% increase in reflexes, along with anecdotal evidence of improved intelligence, memory, and creativity. However, 12% of subjects may contract Parkinson's Disease or Fletcher's Syndrome.</p>
-                </li>
-            </ul>
-            
-        </div>
+        <section>
+            <h2>ORION Project</h2>
+            <img src="images/OrionLogoSL (2).webp" alt="ORION Project" class="png-img">
+            <p>The genesis of the SPARTAN programs occurred in 2321 with the activation of the ORION Project. Launched by the Office of Naval Intelligence, the project was named after the Greek hero Orion. The aim of the ORION Project was to create a special forces unit of biochemically augmented supersoldiers. Under the operational control of Naval Special Warfare Group One, the project was created to combat the growing Insurrection throughout the human Outer Colonies. The project enjoyed limited success but was ultimately disbanded after several years; however, its legacy lived on in the form of the subsequent SPARTAN programs. After the establishment of the SPARTAN-II program years later, the ORION Project was retroactively dubbed SPARTAN-I program.</p>
+            <p>These candidates underwent rigorous testing and augmentations throughout the project's duration. However, the outcomes did not meet expectations, and the candidates were eventually integrated back into the regular military structure after the project was deemed ineffective and subsequently terminated. The lessons learned from ORION laid the groundwork for future programs aimed at developing enhanced soldiers for the UNSC.</p>
+
+            <h2>The Spartan-IIs</h2>
+            <p>Much about the SPARTAN-II program remains classified and cannot be disclosed. However, ONI has permitted us to share the following information: Led by the late Dr. Catherine Halsey, the SPARTAN-II program marked the first significant success in the SPARTAN initiative, aimed at creating elite soldiers through mechanical and biological augmentation. Originally conceived as the second generation of the ORION Project, it was referred to as "Generation-II ORION." The SPARTAN-II program was the first to combine advanced exoskeleton technology with the soldiers' enhanced physiques.</p>
+            <p>SPARTAN-IIs underwent the most extensive and invasive physical augmentations of all the Spartan generations, beginning the process at the early military age of 18 to 20. This method increased their physical mass and height to approximately seven feet.</p>
+            <p>Generation II of the ORION Project was initiated in 2526 when it became necessary to explore more effective methods for combating the Covenant.</p>
+        </section>
         <hr>
-        <div>
-            <h2>MJOLNIR</h2>
-            <P>The MJOLNIR Powered Assault Armor System,(pronunciation:ˈmjɔːlnɪər, myol-neer) is a technologically advanced combat exoskeleton system designed to vastly improve the strength, speed, agility, reflexes, and durability of a Spartan supersoldier. Though the development program is rendered in all capital letters (i.e. Project: MJOLNIR), the armor itself is called Mjolnir.The suit is named after the hammer of Thor in Norse mythology.</P>
-            <p>The Mjolnir armor, developed alongside the SPARTAN-II program by ONI's Materials Group, is the most advanced tactical military hardware available. Designed by Dr. Catherine Halsey, Mjolnir aims to enhance the physical capabilities of SPARTAN soldiers through mechanical and biological augmentation. Each suit is incredibly costly, comparable to a small starship.
-                
-                Project Mjolnir spans over three decades, evolving from a simple suit of armor into a pioneering effort to break technological barriers. The armor enhances physical performance and integrates an artificial intelligence network, marking a significant advancement over earlier powered exoskeletons.
-                
-                Mjolnir suits feature multilayered construction, with a strong alloy shell augmented to deflect some energy weapon strikes. The inner gel layer regulates temperature and adjusts its density, while the entire suit is a sealed system for operations in hazardous environments. It is also resistant to EMP and radiation, with effective filters for toxins.
-                
-                A notable feature of the Mjolnir armor is the polymerized lithium niobocene layer, which amplifies force and reaction time. This system is so responsive that it can only be operated by enhanced humans, as ordinary individuals risk injury.
-                
-                The armor includes a super-dense optical computer memory that supports sophisticated artificial intelligences, allowing for seamless integration with the user’s neural interface. This neural link enables direct control over the suit’s movements, creating a symbiotic relationship between soldier and armor.
-                
-                Mjolnir also offers numerous additional functionalities, such as attachment points for weapons, an advanced heads-up display (HUD) for vital data, and health monitoring systems. Weighing approximately 1,000 pounds, the final Mjolnir battlesuit represents the pinnacle of military technology, designed to be an unparalleled asset in combat.
-                </p>  <img src="images/red_team_leader.png" alt="s_091" max-width="20px" style="float: right; margin-left: 20px;" class="png-img">
-                    <h3>Inner Components</h3>
-                        <ul>
-                            <li><strong>Inner Skinsuit:</strong> Made of moisture-absorbing synthetic material linked to an environmental control computer and neural interface, regulating temperature and fit.</li>
-                            <li><strong>Hydrostatic Gel:</strong> A gel layer that regulates temperature and conforms to the wearer's shape, also pressurizable for high G-force protection.</li>
-                            <li><strong>Liquid Metal Crystal Piezoelectric Layer:</strong> Enhances mobility and strength, reacting to electrical charges to improve physical performance.</li>
-                            <li><strong>Knitted-Crystal Computer Memory Layer:</strong> Supports AI integration and constitutes a significant portion of the suit's cost.</li>
-                            <li><strong>Pressure Seal:</strong> Ensures airtight integrity for underwater or space operations, only failing under extreme conditions.</li>
-                            <li><strong>Titanium Nanocomposite Bodysuit:</strong> Provides strength and flexibility, serving as additional protection against ballistic attacks.</li>
-                            <li><strong>Biofoam Injectors:</strong> Automatically fill and seal wounds, offering temporary protection until medical attention can be obtained.</li>
-                            <li><strong>Reactive Circuits:</strong> Amplify reaction time by connecting directly to the user's neural interface.</li>
-                            <li><strong>Lockdown System:</strong> Protects muscles and joints from injuries by rigidifying the suit in high-impact situations.</li>
-                        </ul>
-                  
-                    <h3>Outer Components</h3>
-                        <ul>
-                            <li><strong>Integrated Communications Helmet:</strong> Features a heads-up display, environmental controls, and a direct neural interface for seamless operation.</li>
-                            <li><strong>Titanium Alloy Outer Shell:</strong> Provides resilient protection against small arms fire and is augmented to dissipate heat from energy weapons.</li>
-                            <li><strong>Memory Processor Superconductor Layer:</strong> Enables starship-grade AI integration for operational support in the field.</li>
-                            <li><strong>Magnetic Weapon Holder Strips:</strong> Small magnets on the suit for holding equipment and allowing attachment to metal surfaces in zero gravity.</li>
-                            <li><strong>Energy Shield System:</strong> Based on reverse-engineered Covenant technology, providing enhanced protection in combat.</li>
-                            <li><strong>Power Plant:</strong> A microfusion cell supplying power to the suit, replacing earlier fission reactors for safety and efficiency.</li>
-                            <li><strong>Power Supply Control Unit:</strong> Manages the power distribution within the armor.</li>
-                            <li><strong>Fail-Safe Detonation System:</strong> A self-destruct mechanism to prevent enemy acquisition of the armor, activated by a specific code.</li>
-                        </ul>
-                
-        </div>
-
-    </section>
-    <section>
-        <div>
-            <h2>Organization</h2>
-            <p>The majority of Spartan-IIs serve under Naval Special Warfare, a division of the UNSC Special Forces closely tied to Section Three of the Office of Naval Intelligence, which initiated the SPARTAN-II program. This structure remained intact even after the formation of the new Spartan Operations branch post-war. All Spartan-IIs graduated as petty officers second class, with many advancing in rank; for instance, John-117 became a Master Chief Petty Officer (in fact some say he embodies the rank to the point all MCPOs are called top chief out of respect for the chief) in 2526, and Frederic-104 was promoted to Lieutenant, Junior Grade in 2552.
-
-                Spartan-IIs operate with considerable autonomy, typically in teams of three to five, although team size and composition vary based on mission requirements. Team leaders select Spartans suited to specific tasks, leading to established arrangements over time due to the dispersal of the original group during the Covenant War. Teams are designated by color for missions, with Blue, Red, and Green teams being the most prominent. Notably, Red Team has sometimes formed smaller splinter units for specific objectives, while Black and Gray teams have maintained their compositions throughout the war.
-                </p>
-                <img src="images/05_evac.jpg" alt="evac">
-                <p style="text-align: center;">(SPARTAN Joseph-122 rescuing marine survivors of a covanant ambush on Paris IV)</p>
-
-        </div>
-    </section>
-    <section>
-        <h1 style="text-align: center;">those who fight</h1>
-        <p style="text-align: center;">(spartans last names have been replacesed by numbers to protect thier famalies)</p>
-        <div class="columns">
-            <div class="column">
-        <div class="col_2">
-            <h2>the SPARTANS</h2>
-            <p>While many outsiders view them as single-minded, the Spartan-IIs remain independent thinkers. Dr. Halsey's intent was to mold the candidates into effective soldiers as some of her colleagues within ONI suggested. She believed that for the Spartans to be truly efficient, they must understand and embrace the significance of their mission. Consequently, the Spartans possess a profound understanding of their roles protectors and the weight of their responsibilities they embrace being a Spartans as both a necessity and a calling.</p>
-            <img src="images/2615257187_b2214c4a5e.jpg" alt="help" style="width: 500px; height: auto;">
-
-                <p>The training of the Spartan-IIs emphasized dedication to duty and the importance of winning at any cost,values they remain committed to. They often ignore concerns about their personal health as long as there is a mission to complete. As a result, they generally prefer planetary operations to being stationed aboard starships without the ability to contribute to an engagement.
-                
-                The Spartan-IIs share a strong sense of solidarity and camaraderie, often considering their fellow Spartans as family. This bond is reflected in their unique internal habits and signals, communicated through subtle gestures and body language that are largely indecipherable to outsiders. Only a select few, including Dr. Halsey and CPO Mendez, were privy to their best-kept secrets. Their familiarity with each other's body language allows them to function in perfect synergy during combat, with teamwork abilities described as almost telepathic.
-                
-                Most humans view the Spartan-IIs with a mix of awe and apprehension, due to their reputation and intimidating presence. Their movements are characterized by seemingly unnatural speed, precision, and grace, which further enhance their imposing image. As a result, few outsiders feel comfortable interacting with them directly, often hesitant even to shake a Spartan's hand. but know they are human like you or me.</p>
-                <img src="images/laOobV.jpg" alt="direction"style="width: 500px; height: auto;" >
-            </div>
-            </div>
-            <div class="column">
-            <h3>[Declassified SPARTAN-IIs]</h3>
-            <ul>
-                <li>Annie-003</li>
-                <li>James-005</li>
-                <li>Jai-006</li>
-                <li>Li-008</li>
-                <li>Ean-009</li>
-                <li>Naomi-010</li>
-                <li>Leon-011</li>
-                <li>Gregor-012</li>
-                <li>Kirk-018</li>
-                <li>Ashley-021</li>
-                <li>Daisy-023</li>
-                <li>Asa-024</li>
-                <li>Robert-025</li>
-                <li>Riz-028</li>
-                <li>Joshua-029</li>
-                <li>Vinh-030</li>
-                <li>Otto-031</li>
-                <li>Samuel-034</li>
-                <li>Randall-037</li>
-                <li>Isaac-039</li>
-                <li>Douglas-042</li>
-                <li>William-043</li>
-                <li>Anton-044</li>
-                <li>Keiichi-047</li>
-                <li>Kurt-051</li>
-                <li>Jorge-052</li>
-                <li>Margaret-053</li>
-                <li>Blake-054</li>
-                <li>Linda-058</li>
-                <li>Malcolm-059</li>
-                <li>Maria-062</li>
-                <li>Sheila-065</li>
-                <li>Soren-066</li>
-                <li>Solomon-069</li>
-                <li>Cassandra-075</li>
-                <li>Arthur-079</li>
-                <li>René-081</li>
-                <li>Fhajad-084</li>
-                <li>Kelly-087</li>
-                <li>Jerome-092</li>
-                <li>Grace-093</li>
-                <li>Caleb-095</li>
-                <li>Musa-096</li>
-                <li>August-099</li>
-                <li>Victor-101 </li>
-                <li>Frederic-104</li>
-                <li>Adriana-111</li>
-                <li>John-117</li>
-                <li>Michael-120</li>
-                <li>Kai-125</li>
-                <li>Fiona-127</li>
-                <li>Oscar-129</li>
-                <li>Alice-130</li>
-                <li>Vannak-134</li>
-                <li>Carris-137</li>
-                <li>Cal-141</li>
-                <li>Roma-143</li>
-                <li>Darcy-278</li>
-            </ul>
-            </div>
-            <div class="column">
-                <div class="col_2">
-                <h2>Elite among Elite</h2>
+        <section>
+            <h1 style="text-align: center;">What Makes a SPARTAN</h1>
+            <img src="images/jye5a8gygwa51.jpg" alt="A Hero">
+            <div>
+                <h2>Augmentation</h2>
                 <ul>
-                    <li>Linda-058 the best sharpshooter of humanity. She never requires a spotter,and her accuracy allows her to pull off remarkable shots.John-117 gave her the callsign "lone wolf" <img src="images/linda_photo_op.jpg" alt="S_058">
-                    (Linda posing for a photo with a solder)</li>
-                    <hr>
-                    <li>Kelly-087 known as the fastest Spartan.she is capable of running 65 kph (40.393 mph).Her speed has given her the name "Rabbit" by her peers.<img src="images/you-really-want-to-add-another-core-then-for-crying-out-v0-vaykjt3ufoeb1.webp" alt="S_087"></li>
-                    <hr>
-                    <li>Fred-104 is the best field statigist in the program A superb soldier Fred's quick thinking has ensured his success in battle on numerous occasions.<img src="images/images (3).jpg" alt="S_104"style="width: 500px; height: auto;" ></li>
+                    <li>
+                        <strong>Occipital Capillary Reversal:</strong>
+                        Surgery is performed on the occipital lobe of the left cerebral hemisphere, the visual processing center of the brain. The surgeon reverses the direction of blood flow in the capillaries to boost blood flow beneath the retina's rods and cones, enhancing visual perception.
+                    </li>
+                    <li>
+                        <strong>Carbide Ceramic Ossification:</strong>
+                        Advanced carbide ceramic material is grafted onto the skeletal structure, making the bones virtually unbreakable.
+                    </li>
+                    <li>
+                        <strong>Catalytic Thyroid Implant:</strong>
+                        A platinum pellet is implanted in the left thyroid gland, releasing human growth hormone to boost skeletal and muscle tissue growth.
+                    </li>
+                    <li>
+                        <strong>Muscular Enhancement Injections:</strong>
+                        A protein complex is injected intramuscularly to increase muscle strength and endurance.
+                    </li>
+                    <li>
+                        <strong>Superconducting Fibrification of Neural Dendrites:</strong>
+                        This alteration enhances bioelectrical nerve transduction, resulting in a 300% increase in reflexes.
+                    </li>
                 </ul>
+            </div>
+            <hr>
+            <div>
+                <h2>MJOLNIR</h2>
+                <p>The MJOLNIR Powered Assault Armor System is a technologically advanced combat exoskeleton system designed to vastly improve the strength, speed, agility, reflexes, and durability of a Spartan supersoldier. The suit is named after the hammer of Thor in Norse mythology.</p>
+                <p>The Mjolnir armor, developed alongside the SPARTAN-II program by ONI's Materials Group, is the most advanced tactical military hardware available. Designed by Dr. Catherine Halsey, Mjolnir aims to enhance the physical capabilities of SPARTAN soldiers through mechanical and biological augmentation. Each suit is incredibly costly, comparable to a small starship.</p>
+                <img src="images/MJOLNIR_MkIV.webp" alt="blueprint" style="float: right; margin-left: 20px; max-width: 300px;">
+                <h3>Inner Components</h3>
+                <ul>
+                    <li><strong>Inner Skinsuit:</strong> Made of moisture-absorbing synthetic material linked to an environmental control computer and neural interface.</li>
+                    <li><strong>Hydrostatic Gel:</strong> Regulates temperature and conforms to the wearer's shape.</li>
+                    <li><strong>Liquid Metal Crystal Piezoelectric Layer:</strong> Enhances mobility and strength.</li>
+                    <li><strong>Knitted-Crystal Computer Memory Layer:</strong> Supports AI integration.</li>
+                    <li><strong>Pressure Seal:</strong> Ensures airtight integrity for underwater or space operations.</li>
+                    <li><strong>Titanium Nanocomposite Bodysuit:</strong> Provides strength and flexibility.</li>
+                    <li><strong>Biofoam Injectors:</strong> Automatically fill and seal wounds.</li>
+                    <li><strong>Reactive Circuits:</strong> Amplify reaction time.</li>
+                    <li><strong>Lockdown System:</strong> Protects muscles and joints from injuries.</li>
+                </ul>
+                <h3>Outer Components</h3>
+                <ul>
+                    <li><strong>Integrated Communications Helmet:</strong> Features a heads-up display and neural interface.</li>
+                    <li><strong>Titanium Alloy Outer Shell:</strong> Provides resilient protection.</li>
+                    <li><strong>Memory Processor Superconductor Layer:</strong> Enables AI integration.</li>
+                    <li><strong>Magnetic Weapon Holder Strips:</strong> For holding equipment.</li>
+                    <li><strong>Energy Shield System:</strong> Provides enhanced protection.</li>
+                    <li><strong>Power Plant:</strong> A microfusion cell supplying power to the suit.</li>
+                    <li><strong>Power Supply Control Unit:</strong> Manages power distribution.</li>
+                    <li><strong>Fail-Safe Detonation System:</strong> A self-destruct mechanism.</li>
+                </ul>
+            </div>
+            <details>
+            <summary><h2>specialized varients of MJOLNIR</h2></summary>
+            <ul>
+                <li>The Mjolnir Powered Assault Armor/C variant, more commonly known as Close Quarters Battle Armor, (acronym CQB), is a type of United Nations Space Command ground infantry body armor and a variant of the Mjolnir Powered Assault Armor/Mark V and Mjolnir Powered Assault Armor/Mark VI.
+                    <img src="images/CQBArmor.webp" alt="cqb" class="png-img">
+                </li>
+                <li>The Mjolnir Powered Assault Armor/V variant, more commonly known as Extra-Vehicular Activity Armor and usually referred to by the acronym EVA Armor, is a type of United Nations Space Command body armor. The EVA armor is a variant of the standard Mark IV, Mark V, Mark VI and [GEN2] Mjolnir Powered Assault Armors; specialized to improve survivability of SPARTANs when performing Extra-Vehicular Activity in vacuum.
+                    <img src="images/EVAArmor.webp" alt="eva" class="png-img">
+                </li>
+                <li>The Mjolnir Powered Assault Armor/EOD variant, more commonly known as Explosive Ordnance Disposal Armor, and abbreviated as EOD Armor, is a variant of the Mark V, Mark VI and [GEN2] Mjolnir Powered Assault Armor systems<img src="images/EODArmor.webp" alt="eod" class="png-img"></li>
+                <li>The Mjolnir Powered Assault Armor/S variant, more commonly known as Scout Armor, or simply as Scout, is a type of United Nations Space Command body armor. A variant of the Mjolnir Powered Assault Armor, the Scout Armor uses advanced materials to give it stealth properties, while the 'R' variant reduces the IR signature and radiation.</li>
+                <li>The Mjolnir Powered Assault Armor/R variant, colloquially known as the Recon Armor, or Recon, is a variant of the Mjolnir Powered Assault Armor, specifically the Mark V,[1] Mark VI and Mjolnir GEN2.The helmet design has also been used in a specialized variant of the ODST battle armor. <img src="images/ReconArmor.webp" alt="recon" class="png-img"></li>
+                <li>The Mjolnir Powered Assault Armor/Rogue, originally referred to as Mark VI(A), is the first successful privately manufactured version of the Mjolnir Mark VI armor and the first of many such "privatized" variants It would later go on to be produced for Mjolnir [GEN2].<img src="images/RogueArmor.webp" alt="rogue" class="png-img"></li>
+            </ul>
+        </details>
+        </section>
+        <section>
+            <h2>Organization</h2>
+            <p>The majority of Spartan-IIs serve under Naval Special Warfare, a division of the UNSC Special Forces closely tied to Section Three of the Office of Naval Intelligence, which initiated the SPARTAN-II program. This structure remained intact even after the formation of the new Spartan Operations branch post-war.</p>
+            <p>Spartan-IIs operate with considerable autonomy, typically in teams of three to five, although team size and composition vary based on mission requirements. Team leaders select Spartans suited to specific tasks, leading to established arrangements over time due to the dispersal of the original group during the Covenant War. Teams are designated by color for missions, with Blue, Red, and Green teams being the most prominent.</p>
+            <img src="images/05_evac.jpg" alt="Evacuation">
+            <p style="text-align: center;">(SPARTAN Joseph-122 rescuing Marine survivors of a Covenant ambush on Paris IV)</p>
+        </section>
+        <section>
+            <h1 style="text-align: center;">Those Who Fight</h1>
+            <p style="text-align: center;">(Spartans' last names have been replaced by numbers to protect their families)</p>
+            <div class="container">
+                <div class="content">
+                    <h2>The SPARTANS</h2>
+                    <p>While many outsiders view them as single-minded, the Spartan-IIs remain independent thinkers. Dr. Halsey's intent was to mold the candidates into effective soldiers as some of her colleagues within ONI suggested. She believed that for the Spartans to be truly efficient, they must understand and embrace the significance of their mission. Consequently, the Spartans possess a profound understanding of their roles as protectors and the weight of their responsibilities. They embrace being Spartans as both a necessity and a calling.</p>
+                    <img src="images/2615257187_b2214c4a5e.jpg" alt="Helping Hand">
+                    <p>The training of the Spartan-IIs emphasized dedication to duty and the importance of winning at any cost, values they remain committed to. They often ignore concerns about their personal health as long as there is a mission to complete. As a result, they generally prefer planetary operations to being stationed aboard starships without the ability to contribute to an engagement.</p>
+                    <img src="images/laOobV.jpg" alt="Direction">
+                    <p>The Spartan-IIs share a strong sense of solidarity and camaraderie, often considering their fellow Spartans as family. This bond is reflected in their unique internal habits and signals, communicated through subtle gestures and body language that are largely indecipherable to outsiders. Only a select few, including Dr. Halsey and CPO Mendez, were privy to their best-kept secrets. Their familiarity with each other's body language allows them to function in perfect synergy during combat, with teamwork abilities described as almost telepathic.</p>
+                </div>
+                <div class="aside">
+                    <details>
+                        <summary><h3>Declassified SPARTAN-IIs</h3></summary>
+                        <ul>
+                            <li>Annie-003</li>
+                            <li>James-005</li>
+                            <li>Jai-006</li>
+                            <li>Li-008</li>
+                            <li>Ean-009</li>
+                            <li>Naomi-010</li>
+                            <li>Leon-011</li>
+                            <li>Gregor-012</li>
+                            <li>Kirk-018</li>
+                            <li>Ashley-021</li>
+                            <li>Daisy-023</li>
+                            <li>Asa-024</li>
+                            <li>Robert-025</li>
+                            <li>Riz-028</li>
+                            <li>Joshua-029</li>
+                            <li>Vinh-030</li>
+                            <li>Otto-031</li>
+                            <li>Samuel-034</li>
+                            <li>Randall-037</li>
+                            <li>Isaac-039</li>
+                            <li>Douglas-042</li>
+                            <li>William-043</li>
+                            <li>Anton-044</li>
+                            <li>Keiichi-047</li>
+                            <li>Kurt-051</li>
+                            <li>Jorge-052</li>
+                            <li>Margaret-053</li>
+                            <li>Blake-054</li>
+                            <li>Linda-058</li>
+                            <li>Malcolm-059</li>
+                            <li>Maria-062</li>
+                            <li>Sheila-065</li>
+                            <li>Soren-066</li>
+                            <li>Solomon-069</li>
+                            <li>Cassandra-075</li>
+                            <li>Arthur-079</li>
+                            <li>René-081</li>
+                            <li>Fhajad-084</li>
+                            <li>Kelly-087</li>
+                            <li>Jerome-092</li>
+                            <li>Grace-093</li>
+                            <li>Caleb-095</li>
+                            <li>Musa-096</li>
+                            <li>August-099</li>
+                            <li>Victor-101</li>
+                            <li>Frederic-104</li>
+                            <li>Adriana-111</li>
+                            <li>John-117</li>
+                            <li>Michael-120</li>
+                            <li>Kai-125</li>
+                            <li>Fiona-127</li>
+                            <li>Oscar-129</li>
+                            <li>Alice-130</li>
+                            <li>Vannak-134</li>
+                            <li>Carris-137</li>
+                            <li>Cal-141</li>
+                            <li>Roma-143</li>
+                            <li>Darcy-278</li>
+                        </ul>
+                    </details>
+                    <h2>Elite Among Elite</h2>
+                    <ul>
+                        <li>
+                            <strong>Linda-058:</strong> The best sharpshooter of humanity. She never requires a spotter, and her accuracy allows her to pull off remarkable shots. John-117 gave her the callsign "Lone Wolf."
+                            <img src="images/linda_photo_op.jpg" alt="Linda-058">
+                        </li>
+                        <li>
+                            <strong>Kelly-087:</strong> Known as the fastest Spartan, capable of running 65 kph (40.393 mph). Her speed has given her the name "Rabbit" by her peers.
+                            <img src="images/you-really-want-to-add-another-core-then-for-crying-out-v0-vaykjt3ufoeb1.webp" alt="Kelly-087">
+                        </li>
+                        <li>
+                            <strong>Fred-104:</strong> The best field strategist in the program. A superb soldier, Fred's quick thinking has ensured his success in battle on numerous occasions.
+                            <img src="images/images (3).jpg" alt="Fred-104">
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section>
     <section>
         <div class="columns">
             <div class="column">
@@ -432,11 +428,10 @@ ul {
                 <p>Determined to disrupt the Covenant invasion fleet, the Spartans infiltrate a Covenant space station, setting it to self-destruct before making their escape. The surviving Spartans, along with Sergeant Johnson and Cortana, take the partially repaired UNSC Gettysburg back to Earth to warn of the approaching Covenant forces.</p>
                <p>After the final battle of the war, John was believed to be dead, lost on the other side of a collapsing slipspace portal. For several months, he and Cortana were presumed lost despite extensive search efforts led by Admiral Margaret Parangosky, the Commander-in-Chief of the Office of Naval Intelligence. The forward section of the Forward Unto Dawn, carrying the Arbiter, crash-landed on Earth.
 
-                On March 3, 2553, Lord Hood commissioned a memorial near Mount Kilimanjaro in Africa to honor UNSC service members who lost their lives during the war. The ceremony was attended by John's closest allies—Dr. Catherine Halsey, SCPO Franklin Mendez, and fellow Spartans Frederic-104, Kelly-087, and Linda-058, along with Naomi-010 and Serin Osman (formerly Serin-019). Thel 'Vadam was also present at the memorial dedication, where Lord Hood expressed gratitude for his support alongside John "to the end." Despite the solemn occasion, Thel voiced skepticism about John's death, knowing firsthand the resilience of the Spartan. He then departed for Sanghelios aboard the Shadow of Intent, accompanied by Rtas 'Vadum, to ensure the safety of their people.
+                On March 3, 2553, Lord Hood commissioned a memorial near Mount Kilimanjaro in Voi, Africa to honor UNSC service members who lost their lives during the war. The ceremony was attended by John's closest allies SCPO Franklin Mendez, and fellow Spartans Frederic-104, Kelly-087, and Linda-058, along with Naomi-010. Thel 'Vadam was also present at the memorial dedication, where Lord Hood expressed gratitude for his support alongside John "to the end." Despite the solemn occasion, Thel voiced skepticism about John's death, knowing firsthand the resilience of the Spartan.
+                John's Spartan tag was inscribed on the memorial by an unknown individual, accompanied by the rank meaning that he recived a postumes promotion Master Chief Petty Officer of the Navy.
                 
-                John's Spartan tag was inscribed on the memorial by an unknown individual, accompanied by the incorrect insignia of Master Chief Petty Officer of the Navy.
-                
-                Unknown to everyone else, John and Cortana survived the explosion of Installation 08 in the remaining cargo section of the Forward Unto Dawn. However, the ship was nearly powerless and could not be properly navigated. Cortana, relieved to find John alive, informed him that it could take years for anyone to detect their distress signal. In a conversation reminiscent of their earlier exchanges after the destruction of Installation 04, Cortana recounted John's heroic actions and stated, "It's finished," to which John agreed. He then entered a cryotube, and Cortana expressed that she would miss him. John instructed her to wake him when she needed him. In July 2557 the Master Chief was found by the UNSC Infinity.</p>
+                Unknown to everyone else, John and Cortana survived the explosion in the remaining cargo section of the Forward Unto Dawn. However, the ship was nearly powerless and could not be properly navigated. Cortana, relieved to find John alive, John instructed her to wake him when she needed him. In July 2557 the Master Chief was found by the UNSC Infinity. bringing him home after 4 years.</p>
             </div>
         </div>
     </div>
@@ -454,7 +449,7 @@ ul {
                 
                 Hundreds of Spartan-IVs are assigned to the UNSC Infinity, the most formidable warship ever built by humanity. The frigate UNSC Meriwether Lewis also hosts its own Spartan contingent. On Infinity, Spartan-IVs engage in training simulations known as "War Games" on a state-of-the-art combat deck, designed to replicate various environments and ensure they remain battle-ready. Beyond the simulations, they train in multiple forms of martial arts. As per STO 11.6, their daily regimen includes at least two hours of military specialty training and two hours of physical conditioning and augmentation monitoring.
                 The Spartan-IVs operate within a dedicated branch of the UNSC called Spartan Operations, in contrast to their predecessors who were integrated into different chains of command. Some Spartan-IVs take on covert roles within ONI. The majority of the Spartan-IVs are adult volunteers, but surviving Spartans from the Human-Covenant War were also offered integration into this new branch. </p>
-            <img src="images/009483b4d81a1c1dfa524c455fe7a2cec879c2f8r1-2048-1152v2_00.jpg" alt="widow_team">
+            
         </div>
     </section>
     
